@@ -9,6 +9,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import ScrollTop from "@/components/layout/ScrollTop";
 import Preloader from "@/components/layout/Preloader";
+import WhatsAppFloat from "@/components/layout/WhatsAppFloat";
 
 export const metadata: Metadata = {
   title: "Restaurantly",
@@ -37,6 +38,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Header />
           <main className="main">{children}</main>
           <Footer />
+          <WhatsAppFloat />
           <ScrollTop />
           <Preloader />
         </AppProviders>
