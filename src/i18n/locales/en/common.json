@@ -1,0 +1,269 @@
+{
+  "site": { "name": "Restaurantly" },
+
+  "topbar": {
+    "email": "contact@example.com",
+    "phone": "+1 5589 55488 55"
+  },
+
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "menu": "Menu",
+    "specials": "Specials",
+    "events": "Events",
+    "chefs": "Chefs",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "book": "Book a Table",
+
+    "dropdown": "Dropdown",
+    "dropdown1": "Dropdown 1",
+    "dropdown2": "Dropdown 2",
+    "dropdown3": "Dropdown 3",
+    "dropdown4": "Dropdown 4",
+    "deepDropdown": "Deep Dropdown",
+    "deep1": "Deep Dropdown 1",
+    "deep2": "Deep Dropdown 2",
+    "deep3": "Deep Dropdown 3",
+    "deep4": "Deep Dropdown 4",
+    "deep5": "Deep Dropdown 5"
+  },
+
+  "hero": {
+    "welcome": "Welcome to",
+    "subtitle": "Delivering great food for more than 18 years!",
+    "ctaMenu": "Our Menu",
+    "ctaBook": "Book a Table",
+    "playVideo": "Play Video"
+  },
+
+  "about": {
+    "title": "Voluptatem dignissimos provident",
+    "italic": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "bullets": {
+      "1": "Ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "2": "Duis aute irure dolor in reprehenderit in voluptate velit.",
+      "3": "Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur."
+    },
+    "desc": "Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+  },
+
+  "why": {
+    "kicker": "WHY US",
+    "title": "Why Choose Our Restaurant",
+    "cards": {
+      "1": { "title": "Lorem Ipsum", "desc": "Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat" },
+      "2": { "title": "Repellat Nihil", "desc": "Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest" },
+      "3": { "title": "Ad ad velit qui", "desc": "Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis" }
+    }
+  },
+
+  "menu": {
+    "kicker": "Menu",
+    "title": "Check Our Tasty Menu",
+    "filters": { "all": "All", "starters": "Starters", "salads": "Salads", "specialty": "Specialty" },
+    "items": {
+      "lobster_bisque": { "name": "Lobster Bisque", "desc": "Lorem, deren, trataro, filede, nerada" },
+      "bread_barrel": { "name": "Bread Barrel", "desc": "Lorem, deren, trataro, filede, nerada" },
+      "crab_cake": { "name": "Crab Cake", "desc": "A delicate crab cake served on a toasted roll with lettuce and tartar sauce" },
+      "caesar": { "name": "Caesar Selections", "desc": "Lorem, deren, trataro, filede, nerada" },
+      "tuscan_grilled": { "name": "Tuscan Grilled", "desc": "Grilled chicken with provolone, artichoke hearts, and roasted red pesto" },
+      "mozzarella": { "name": "Mozzarella Stick", "desc": "Lorem, deren, trataro, filede, nerada" },
+      "greek_salad": { "name": "Greek Salad", "desc": "Fresh spinach, crisp romaine, tomatoes, and Greek olives" },
+      "spinach_salad": { "name": "Spinach Salad", "desc": "Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette" },
+      "lobster_roll": { "name": "Lobster Roll", "desc": "Plump lobster meat, mayo and crisp lettuce on a toasted bulky roll" }
+    }
+  },
+
+  "specials": {
+    "kicker": "Specials",
+    "title": "Check Our Specials",
+    "tabs": {
+      "1": "Modi sit est",
+      "2": "Unde praesentium sed",
+      "3": "Pariatur explicabo vel",
+      "4": "Nostrum qui quasi",
+      "5": "Iusto ut expedita aut"
+    },
+    "items": {
+      "1": {
+        "title": "Architecto ut aperiam autem id",
+        "italic": "Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka",
+        "desc": "Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero"
+      },
+      "2": {
+        "title": "Et blanditiis nemo veritatis excepturi",
+        "italic": "Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka",
+        "desc": "Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal"
+      },
+      "3": {
+        "title": "Impedit facilis occaecati odio neque aperiam sit",
+        "italic": "Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis aut",
+        "desc": "Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste odio. Earum odit aut quod. Eum non fuga consequatur quasi aut. Suscipit fugiat sit ullam. Soluta et harum voluptatem optio quae"
+      },
+      "4": {
+        "title": "Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore",
+        "italic": "Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus",
+        "desc": "Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum inventore"
+      },
+      "5": {
+        "title": "Est eveniet ipsam sindera pad rone matrelat sando reda",
+        "italic": "Omnis blanditiis saepe eos autem qui sunt debitis porro quia.",
+        "desc": "Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel"
+      }
+    }
+  },
+
+  "events": {
+    "items": {
+      "birthday": {
+        "title": "Birthday Parties",
+        "italic": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "bullets": {
+          "1": "Ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "2": "Duis aute irure dolor in reprehenderit in voluptate velit.",
+          "3": "Ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        },
+        "desc": "Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur"
+      },
+      "private": {
+        "title": "Private Parties",
+        "italic": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "bullets": {
+          "1": "Ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "2": "Duis aute irure dolor in reprehenderit in voluptate velit.",
+          "3": "Ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        },
+        "desc": "Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur"
+      },
+      "custom": {
+        "title": "Custom Parties",
+        "italic": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "bullets": {
+          "1": "Ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "2": "Duis aute irure dolor in reprehenderit in voluptate velit.",
+          "3": "Ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        },
+        "desc": "Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur"
+      }
+    }
+  },
+
+  "book": {
+    "kicker": "RESERVATION",
+    "title": "Book a Table",
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "phone": "Your Phone",
+      "date": "Date",
+      "time": "Time",
+      "people": "# of people",
+      "message": "Message",
+      "loading": "Loading",
+      "success": "Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!",
+      "submit": "Book a Table"
+    }
+  },
+
+  "testimonials": {
+    "kicker": "Testimonials",
+    "title": "What they're saying about us",
+    "items": {
+      "saul": {
+        "name": "Saul Goodman",
+        "role": "Ceo & Founder",
+        "quote": "Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper."
+      },
+      "sara": {
+        "name": "Sara Wilsson",
+        "role": "Designer",
+        "quote": "Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa."
+      },
+      "jena": {
+        "name": "Jena Karlis",
+        "role": "Store Owner",
+        "quote": "Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim."
+      },
+      "matt": {
+        "name": "Matt Brandon",
+        "role": "Freelancer",
+        "quote": "Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam."
+      },
+      "john": {
+        "name": "John Larson",
+        "role": "Entrepreneur",
+        "quote": "Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid."
+      }
+    }
+  },
+
+  "gallery": {
+    "kicker": "Gallery",
+    "title": "Some photos from Our Restaurant",
+    "open": "Open image"
+  },
+
+  "chefs": {
+    "kicker": "Team",
+    "title": "Necessitatibus eius consequatur",
+    "items": {
+      "walter": { "name": "Walter White", "role": "Master Chef" },
+      "sarah": { "name": "Sarah Jhonson", "role": "Patissier" },
+      "william": { "name": "William Anderson", "role": "Cook" }
+    }
+  },
+
+  "contact": {
+    "kicker": "Contact",
+    "title": "Contact Us",
+    "locationTitle": "Location",
+    "locationValue": "A108 Adam Street, New York, NY 535022",
+    "hoursTitle": "Open Hours",
+    "hoursLine1": "Monday-Saturday:",
+    "hoursLine2": "11:00 AM - 2300 PM",
+    "emailTitle": "Email",
+    "callTitle": "Call",
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "subject": "Subject",
+      "message": "Message",
+      "loading": "Loading",
+      "success": "Your message has been sent. Thank you!",
+      "submit": "Send Message"
+    }
+  },
+
+  "footer": {
+    "addressLine1": "A108 Adam Street",
+    "addressLine2": "New York, NY 535022",
+    "phoneLabel": "Phone:",
+    "emailLabel": "Email:",
+    "usefulLinks": "Useful Links",
+    "servicesTitle": "Our Services",
+    "service1": "Web Design",
+    "service2": "Web Development",
+    "service3": "Product Management",
+    "service4": "Marketing",
+    "service5": "Graphic Design",
+    "newsletterTitle": "Our Newsletter",
+    "newsletterDesc": "Subscribe to our newsletter and receive the latest news about our products and services!",
+    "newsletterPlaceholder": "Email address",
+    "newsletterSuccess": "Subscribed (demo only).",
+    "subscribe": "Subscribe",
+    "copyright": "Copyright",
+    "rights": "All Rights Reserved",
+    "credits": "Designed by BootstrapMade",
+    "starterPage": "Starter Page"
+  },
+
+  "starter": {
+    "pageTitle": "Starter Page",
+    "pageDesc": "Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias.",
+    "sectionKicker": "Starter Section",
+    "sectionTitle": "Starter Section",
+    "sectionBody": "Use this page as a starter for your own custom pages."
+  }
+}
