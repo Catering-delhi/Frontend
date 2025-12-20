@@ -5,7 +5,13 @@ import React from "react";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
 
-export default function PageTitle() {
+interface PageTitleProps {
+  title: string;
+  description?: string;
+  breadcrumbLabel: string;
+}
+
+export default function PageTitle({ title, description, breadcrumbLabel }: PageTitleProps) {
   const { t } = useTranslation("common");
 
   return (
@@ -15,17 +21,17 @@ export default function PageTitle() {
     >
       <div className="container position-relative">
         <h1>
-          {t("starter.pageTitle")}
+          {title}
           <br />
         </h1>
-        <p>{t("starter.pageDesc")}</p>
+        {description && <p>{description}</p>}
 
         <nav className="breadcrumbs">
           <ol>
             <li>
-              <Link href="/#hero">{t("nav.home")}</Link>
+              <Link href="/">{t("nav.home")}</Link>
             </li>
-            <li className="current">{t("starter.pageTitle")}</li>
+            <li className="current">{breadcrumbLabel}</li>
           </ol>
         </nav>
       </div>

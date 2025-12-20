@@ -2,6 +2,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Link from "next/link";
 import { useTranslation } from "react-i18next";
 import Reveal from "@/components/ui/Reveal";
 import Modal from "@/components/ui/Modal";
@@ -29,12 +30,12 @@ export default function Hero() {
 
             <Reveal delay={0.25}>
               <div className="d-flex mt-4">
-                <a className="cta-btn" href="/#menu">
+                <Link className="cta-btn" href="/menu">
                   {t("hero.ctaMenu")}
-                </a>
-                <a className="cta-btn" href="/#book-a-table">
+                </Link>
+                <Link className="cta-btn" href="/book-a-table">
                   {t("hero.ctaBook")}
-                </a>
+                </Link>
               </div>
             </Reveal>
           </div>

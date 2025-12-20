@@ -1,81 +1,127 @@
 // src/components/sections/Menu.tsx
 "use client";
 
-import React, { useMemo, useState } from "react";
-import { useTranslation } from "react-i18next";
-import SectionTitle from "@/components/ui/SectionTitle";
+import React from "react";
+import Link from "next/link";
 import Reveal from "@/components/ui/Reveal";
-import { menuItems, type MenuCategory } from "@/data/menu";
+
+interface OrderItem {
+  id: number;
+  image: string;
+  price: string;
+  title: string;
+  description: string;
+}
+
+const orders: OrderItem[] = [
+  {
+    id: 1,
+    image: "/assets/img/order/order-1.png",
+    price: "10.00",
+    title: "Weastern Set Meal 01",
+    description: "Chicken Fried Rice   |   Crispy Chicken fry\nWeastern Pickle   |   Mixed Vegetable\nSoft Drinks",
+  },
+  {
+    id: 2,
+    image: "/assets/img/order/order-2.png",
+    price: "10.00",
+    title: "Weastern Set Meal 02",
+    description: "Chicken Fried Rice   |   Crispy Chicken fry\nWeastern Pickle   |   Mixed Vegetable\nSoft Drinks",
+  },
+  {
+    id: 3,
+    image: "/assets/img/order/order-3.png",
+    price: "10.00",
+    title: "Weastern Set Meal 03",
+    description: "Chicken Fried Rice   |   Crispy Chicken fry\nWeastern Pickle   |   Mixed Vegetable\nSoft Drinks",
+  },
+  {
+    id: 4,
+    image: "/assets/img/order/order-4.png",
+    price: "10.00",
+    title: "Weastern Set Meal 01",
+    description: "Chicken Fried Rice   |   Crispy Chicken fry\nWeastern Pickle   |   Mixed Vegetable\nSoft Drinks",
+  },
+  {
+    id: 5,
+    image: "/assets/img/order/order-5.png",
+    price: "10.00",
+    title: "Weastern Set Meal 02",
+    description: "Chicken Fried Rice   |   Crispy Chicken fry\nWeastern Pickle   |   Mixed Vegetable\nSoft Drinks",
+  },
+  {
+    id: 6,
+    image: "/assets/img/order/order-6.png",
+    price: "10.00",
+    title: "Weastern Set Meal 03",
+    description: "Chicken Fried Rice   |   Crispy Chicken fry\nWeastern Pickle   |   Mixed Vegetable\nSoft Drinks",
+  },
+];
 
 export default function Menu() {
-  const { t } = useTranslation("common");
-  const [active, setActive] = useState<MenuCategory>("all");
-
-  const filtered = useMemo(() => {
-    if (active === "all") return menuItems;
-    return menuItems.filter((i) => i.category === active);
-  }, [active]);
-
-  const setFilter = (cat: MenuCategory) => setActive(cat);
-
   return (
-    <section id="menu" className="menu section">
-      <SectionTitle kicker={t("menu.kicker")} title={t("menu.title")} />
-
+    <section id="menu" className="menu section order_area">
       <div className="container">
-        <Reveal>
-          <ul className="menu-filters isotope-filters">
-            <li
-              className={active === "all" ? "filter-active" : ""}
-              role="button"
-              tabIndex={0}
-              onClick={() => setFilter("all")}
-              onKeyDown={(e) => (e.key === "Enter" ? setFilter("all") : null)}
-            >
-              {t("menu.filters.all")}
-            </li>
-            <li
-              className={active === "starters" ? "filter-active" : ""}
-              role="button"
-              tabIndex={0}
-              onClick={() => setFilter("starters")}
-              onKeyDown={(e) => (e.key === "Enter" ? setFilter("starters") : null)}
-            >
-              {t("menu.filters.starters")}
-            </li>
-            <li
-              className={active === "salads" ? "filter-active" : ""}
-              role="button"
-              tabIndex={0}
-              onClick={() => setFilter("salads")}
-              onKeyDown={(e) => (e.key === "Enter" ? setFilter("salads") : null)}
-            >
-              {t("menu.filters.salads")}
-            </li>
-            <li
-              className={active === "specialty" ? "filter-active" : ""}
-              role="button"
-              tabIndex={0}
-              onClick={() => setFilter("specialty")}
-              onKeyDown={(e) => (e.key === "Enter" ? setFilter("specialty") : null)}
-            >
-              {t("menu.filters.specialty")}
-            </li>
-          </ul>
-        </Reveal>
-
-        <div className="row isotope-container">
-          {filtered.map((item, idx) => (
-            <div key={item.id} className="col-lg-6 menu-item">
-              <Reveal delay={idx * 0.03}>
-                <img src={item.image} className="menu-img" alt="" />
-                <div className="menu-content">
-                  <a href="#" onClick={(e) => e.preventDefault()}>
-                    {t(item.nameKey)}
-                  </a>
-                  <span>{item.price}</span>
+        <div className="row">
+          <div className="col-xl-12">
+            <div className="section_title mb-5 text-center" style={{ marginBottom: "70px" }}>
+              <Reveal>
+                <h3>Popular Orders</h3>
+                <p>
+                  inappropriate behavior is often laughed off as "boys will be boys," women face higher conduct standards{" "}
+                  <br className="d-none d-md-block" />
+                  especially in the workplace. That's why it's crucial that, as women.
+                </p>
+              </Reveal>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          {orders.map((order, idx) => (
+            <div key={order.id} className="col-xl-4 col-md-6 mb-4">
+              <Reveal delay={idx * 0.1}>
+                <div className="single_order h-100">
+                  <div className="order_thumb position-relative">
+                    <img
+                      src={order.image}
+                      alt={order.title}
+                      className="img-fluid w-100"
+                      style={{ height: "250px", objectFit: "cover" }}
+                      onError={(e) => {
+                        // Fallback to menu images if order images don't exist
+                        const target = e.target as HTMLImageElement;
+                        const menuImages = [
+                          "/assets/img/menu/bread-barrel.jpg",
+                          "/assets/img/menu/caesar.jpg",
+                          "/assets/img/menu/greek-salad.jpg",
+                          "/assets/img/menu/lobster-bisque.jpg",
+                          "/assets/img/menu/lobster-roll.jpg",
+                          "/assets/img/menu/mozzarella.jpg",
+                        ];
+                        const fallbackIndex = (order.id - 1) % menuImages.length;
+                        if (!target.src.includes(menuImages[fallbackIndex])) {
+                          target.src = menuImages[fallbackIndex];
+                        }
+                      }}
+                    />
+                    <div className="order_prise position-absolute">
+                      <span>${order.price}</span>
+                    </div>
+                  </div>
+                  <div className="order_info p-4">
+                    <h3 className="mb-3">
+                      <Link href="#" onClick={(e) => e.preventDefault()}>
+                        {order.title}
+                      </Link>
+                    </h3>
+                    <p className="mb-3" style={{ whiteSpace: "pre-line", lineHeight: "1.8" }}>
+                      {order.description}
+                    </p>
+                    <Link href="/contact" className="boxed_btn">
+                      Order Now!
+                    </Link>
+                  </div>
                 </div>
-                <div className="menu-ingredients">{t(item.descKey)}</div>
               </Reveal>
             </div>
           ))}
