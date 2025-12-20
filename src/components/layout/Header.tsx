@@ -3,21 +3,21 @@
 
 import React, { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "@/hooks/useTheme";
 import { useLocale } from "@/hooks/useLocale";
-
-const SECTION_IDS = ["hero", "about", "menu", "specials", "events", "chefs", "gallery", "contact", "book-a-table"];
 
 export default function Header() {
   const { t, i18n } = useTranslation("common");
   const { theme, toggle } = useTheme();
   const { locale, setLocale } = useLocale(i18n);
+  const pathname = usePathname();
 
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [active, setActive] = useState<string>("hero");
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-  const [deepDropdownOpen, setDeepDropdownOpen] = useState(false);
+  
+  // Determine active route based on pathname
+  const active = pathname === "/" ? "home" : pathname.slice(1);
 
   const closeMobile = useMemo(
     () => () => {
@@ -42,24 +42,6 @@ export default function Header() {
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
-  useEffect(() => {
-    const sections = SECTION_IDS.map((id) => document.getElementById(id)).filter(Boolean) as HTMLElement[];
-    if (!sections.length) return;
-
-    const io = new IntersectionObserver(
-      (entries) => {
-        const visible = entries
-          .filter((e) => e.isIntersecting)
-          .sort((a, b) => (b.intersectionRatio ?? 0) - (a.intersectionRatio ?? 0))[0];
-        if (visible?.target?.id) setActive(visible.target.id);
-      },
-      { rootMargin: "-30% 0px -60% 0px", threshold: [0.1, 0.2, 0.3] }
-    );
-
-    sections.forEach((s) => io.observe(s));
-    return () => io.disconnect();
   }, []);
 
   return (
@@ -107,126 +89,41 @@ export default function Header() {
 
       <div className="branding d-flex align-items-cente">
         <div className="container position-relative d-flex align-items-center justify-content-between">
-          <Link className="logo d-flex align-items-center me-auto me-xl-0" href="/#hero" onClick={closeMobile}>
-            <h1 className="sitename">{t("site.name")}</h1>
+          <Link className="logo d-flex align-items-center me-auto me-xl-0" href="/" onClick={closeMobile}>
+            <img
+              src="/assets/img/logo.png"
+              className="logo-img"
+              alt={`${t("site.name")} logo`}
+              style={{ maxWidth: "50px", maxHeight: "50px", width: "auto", height: "auto" }}
+            />
+            <h1 className="sitename visually-hidden">{t("site.name")}</h1>
           </Link>
 
           <nav id="navmenu" className="navmenu">
             <ul>
               <li>
-                <Link className={active === "hero" ? "active" : ""} href="/#hero" onClick={closeMobile}>
+                <Link className={active === "home" ? "active" : ""} href="/" onClick={closeMobile}>
                   {t("nav.home")}
                   <br />
                 </Link>
               </li>
               <li>
-                <Link className={active === "about" ? "active" : ""} href="/#about" onClick={closeMobile}>
+                <Link className={active === "about" ? "active" : ""} href="/about" onClick={closeMobile}>
                   {t("nav.about")}
                 </Link>
               </li>
               <li>
-                <Link className={active === "menu" ? "active" : ""} href="/#menu" onClick={closeMobile}>
+                <Link className={active === "menu" ? "active" : ""} href="/menu" onClick={closeMobile}>
                   {t("nav.menu")}
                 </Link>
               </li>
               <li>
-                <Link className={active === "specials" ? "active" : ""} href="/#specials" onClick={closeMobile}>
-                  {t("nav.specials")}
-                </Link>
-              </li>
-              <li>
-                <Link className={active === "events" ? "active" : ""} href="/#events" onClick={closeMobile}>
-                  {t("nav.events")}
-                </Link>
-              </li>
-              <li>
-                <Link className={active === "chefs" ? "active" : ""} href="/#chefs" onClick={closeMobile}>
-                  {t("nav.chefs")}
-                </Link>
-              </li>
-              <li>
-                <Link className={active === "gallery" ? "active" : ""} href="/#gallery" onClick={closeMobile}>
+                <Link className={active === "gallery" ? "active" : ""} href="/gallery" onClick={closeMobile}>
                   {t("nav.gallery")}
                 </Link>
               </li>
-
-              {/* Keep template dropdown (optional) */}
-              <li className={`dropdown ${dropdownOpen ? "dropdown-active" : ""}`}>
-                <a
-                  href="#"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setDropdownOpen((v) => !v);
-                  }}
-                >
-                  <span>{t("nav.dropdown")}</span> <i className="bi bi-chevron-down toggle-dropdown" />
-                </a>
-                <ul>
-                  <li>
-                    <a href="#" onClick={(e) => e.preventDefault()}>
-                      {t("nav.dropdown1")}
-                    </a>
-                  </li>
-
-                  <li className={`dropdown ${deepDropdownOpen ? "dropdown-active" : ""}`}>
-                    <a
-                      href="#"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setDeepDropdownOpen((v) => !v);
-                      }}
-                    >
-                      <span>{t("nav.deepDropdown")}</span> <i className="bi bi-chevron-down toggle-dropdown" />
-                    </a>
-                    <ul>
-                      <li>
-                        <a href="#" onClick={(e) => e.preventDefault()}>
-                          {t("nav.deep1")}
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" onClick={(e) => e.preventDefault()}>
-                          {t("nav.deep2")}
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" onClick={(e) => e.preventDefault()}>
-                          {t("nav.deep3")}
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" onClick={(e) => e.preventDefault()}>
-                          {t("nav.deep4")}
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" onClick={(e) => e.preventDefault()}>
-                          {t("nav.deep5")}
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-
-                  <li>
-                    <a href="#" onClick={(e) => e.preventDefault()}>
-                      {t("nav.dropdown2")}
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" onClick={(e) => e.preventDefault()}>
-                      {t("nav.dropdown3")}
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" onClick={(e) => e.preventDefault()}>
-                      {t("nav.dropdown4")}
-                    </a>
-                  </li>
-                </ul>
-              </li>
-
               <li>
-                <Link className={active === "contact" ? "active" : ""} href="/#contact" onClick={closeMobile}>
+                <Link className={active === "contact" ? "active" : ""} href="/contact" onClick={closeMobile}>
                   {t("nav.contact")}
                 </Link>
               </li>
@@ -244,7 +141,7 @@ export default function Header() {
             />
           </nav>
 
-          <Link className="btn-book-a-table d-none d-xl-block" href="/#book-a-table">
+          <Link className="btn-book-a-table d-none d-xl-block" href="/book-a-table">
             {t("nav.book")}
           </Link>
         </div>
