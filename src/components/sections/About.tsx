@@ -3,6 +3,7 @@
 
 import React from "react";
 import Reveal from "@/components/ui/Reveal";
+import { color } from "framer-motion";
 
 export default function About() {
   return (
@@ -12,11 +13,16 @@ export default function About() {
           <div className="row gy-4">
             <div className="col-lg-6 order-1 order-lg-2">
               <Reveal>
-                <img 
-                  src="/assets/img/aboutus.webp" 
-                  className="img-fluid about-img" 
-                  alt="Restaurant dining room" 
-                  style={{ maxWidth: "470px", width: "100%", height: "auto", objectFit: "cover" }}
+                <img
+                  src="/assets/img/aboutus1.webp"
+                  className="img-fluid about-img"
+                  alt="Restaurant dining room"
+                  style={{
+                    maxWidth: "470px",
+                    width: "100%",
+                    height: "400px",
+                    objectFit: "cover",
+                  }}
                   onError={(e) => {
                     // Fallback to existing about image if aboutus.webp doesn't exist
                     const target = e.target as HTMLImageElement;
@@ -27,278 +33,206 @@ export default function About() {
                 />
               </Reveal>
             </div>
-            <div className="col-lg-6 order-2 order-lg-1 content">
+            <div
+              className="col-lg-6 order-2 order-lg-1 content"
+              style={{ marginTop: "50px" }}
+            >
               <Reveal>
-                <h3>Voluptatem dignissimos provident</h3>
+                <h3>Crafting Signature Flavours for Unforgettable Experiences</h3>
                 <p className="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua.
+                Bespoke Cuisine is a catering company dedicated to creating thoughtfully curated culinary experiences for corporate events, private gatherings, and special occasions. We believe great food is not just about taste, but about precision, presentation, and understanding the purpose of every event.
                 </p>
                 <ul>
                   <li>
                     <i className="bi bi-check2-all"></i>{" "}
-                    <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
-                  </li>
-                  <li>
-                    <i className="bi bi-check2-all"></i>{" "}
-                    <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span>
+                    <span>
+                    Thoughtfully designed menus tailored to your event, preferences, and dietary requirements.
+                    </span>
                   </li>
                   <li>
                     <i className="bi bi-check2-all"></i>{" "}
                     <span>
-                      Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.
+                    Fresh, high-quality ingredients selected to deliver consistent taste and superior quality.
+
+                    </span>
+                  </li>
+                  <li>
+                    <i className="bi bi-check2-all"></i>{" "}
+                    <span>
+                    Professional planning and smooth service ensuring a stress-free and well-managed event.
                     </span>
                   </li>
                 </ul>
                 <p>
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
+                At Bespoke Cuisine, we don’t follow standard menus — we design food experiences that are personal, elegant, and memorable.
                 </p>
               </Reveal>
             </div>
           </div>
         </div>
       </section>
-
       {/* Our Team */}
-      <section className="py-5 team-section" style={{ border: "1px solid #cda45e" }}>
+      <section className="py-5" style={{border: "1px solid #cda45e",}}>
         <div className="container">
-          {/* Section Heading */}
-          <div className="row justify-content-center text-center mb-4">
-            <div className="col-lg-8">
-              <Reveal>
-                <span className="text-warning">Our Team</span>
-                <h2 className="display-5 fw-bold">Meet the Team</h2>
-                <p className="lead">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Soluta harum ipsum venenatis metus sem veniam.
-                </p>
-              </Reveal>
+          <div className="row justify-content-center text-center mb-2 mb-lg-4">
+            <div className="col-12 col-lg-8 col-xxl-7 text-center mx-auto">
+              {/* <span className="text-muted">Our Team</span> */}
+              <h2 className="display-5 fw-bold">Meet the Team</h2>
+              <p className="lead">
+              Led by the Founder & Director, supported by the Co-Founder and managed by an experienced team, Bespoke Cuisine delivers quality with precision
+              </p>
             </div>
           </div>
 
-          <div className="row g-4">
-            {/* Member 1 */}
-            <div className="col-lg-6">
-              <Reveal delay={0.1}>
-                <div className="card border-0 h-100">
-                  <div className="row g-0 align-items-center bg-light">
-                    <div className="col-sm-5">
-                      <img
-                        src="/assets/img/owner.JPG"
-                        className="img-fluid w-100"
-                        alt="Owner"
-                        style={{ objectFit: "cover", height: "100%", minHeight: "200px" }}
-                        onError={(e) => {
-                          const target = e.target as HTMLImageElement;
-                          if (target.src !== "/assets/img/chefs/chefs-1.jpg") {
-                            target.src = "/assets/img/chefs/chefs-1.jpg";
-                          }
-                        }}
-                      />
-                    </div>
-                    <div className="col-sm-7">
-                      <div className="card-body">
-                        <h5 className="fw-bold" style={{ color: "#cda45e" }}>
-                          John Doe
-                        </h5>
-                        <div className="text-muted mb-3">Programmer</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                        <div className="d-flex gap-2">
-                          <a
-                            className="btn btn-sm btn-outline-dark"
-                            href="#"
-                            onClick={(e) => e.preventDefault()}
-                            aria-label="Facebook"
-                          >
-                            <i className="bi bi-facebook"></i>
-                          </a>
-                          <a
-                            className="btn btn-sm btn-outline-dark"
-                            href="#"
-                            onClick={(e) => e.preventDefault()}
-                            aria-label="Twitter"
-                          >
-                            <i className="bi bi-twitter"></i>
-                          </a>
-                          <a
-                            className="btn btn-sm btn-outline-dark"
-                            href="#"
-                            onClick={(e) => e.preventDefault()}
-                            aria-label="LinkedIn"
-                          >
-                            <i className="bi bi-linkedin"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
+          <div className="row">
+            {/* CARD 1 */}
+            <div className="col-md-4">
+              <div className="card text-center mb-3">
+                <div
+                  className="card-body p-0 pb-4"
+                  style={{ backgroundColor: "#cda45e" }}
+                >
+                  <div className="mb-4">
+                    <img
+                      className="img-fluid"
+                      src="/assets/img/owner.JPG"
+                      alt="Team member"
+                    />
+                  </div>
+
+                  <h5 className="fw-bold" style={{ color: "#000" }}>
+                    Mr. Sanjeet Singh
+                  </h5>
+                  <div className="fw-bold" style={{ color: "#000" }}>
+                    Founder &amp; Director
                   </div>
                 </div>
-              </Reveal>
+              </div>
             </div>
 
-            {/* Member 2 */}
-            <div className="col-lg-6">
-              <Reveal delay={0.2}>
-                <div className="card border-0 h-100">
-                  <div className="row g-0 align-items-center bg-light">
-                    <div className="col-sm-5">
-                      <img
-                        src="/assets/img/chefs/chefs-2.jpg"
-                        className="img-fluid w-100"
-                        alt="Team Member"
-                        style={{ objectFit: "cover", height: "100%", minHeight: "200px" }}
-                      />
-                    </div>
-                    <div className="col-sm-7">
-                      <div className="card-body">
-                        <h5 className="fw-bold" style={{ color: "#cda45e" }}>
-                          John Doe
-                        </h5>
-                        <div className="text-muted mb-3">Graphic Designer</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                        <div className="d-flex gap-2">
-                          <a
-                            className="btn btn-sm btn-outline-dark"
-                            href="#"
-                            onClick={(e) => e.preventDefault()}
-                            aria-label="Facebook"
-                          >
-                            <i className="bi bi-facebook"></i>
-                          </a>
-                          <a
-                            className="btn btn-sm btn-outline-dark"
-                            href="#"
-                            onClick={(e) => e.preventDefault()}
-                            aria-label="Twitter"
-                          >
-                            <i className="bi bi-twitter"></i>
-                          </a>
-                          <a
-                            className="btn btn-sm btn-outline-dark"
-                            href="#"
-                            onClick={(e) => e.preventDefault()}
-                            aria-label="LinkedIn"
-                          >
-                            <i className="bi bi-linkedin"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
+            {/* CARD 2 */}
+            <div className="col-md-4">
+              <div className="card text-center mb-3">
+                <div
+                  className="card-body p-0 pb-4"
+                  style={{ backgroundColor: "#cda45e" }}
+                >
+                  <div className="mb-4">
+                    <img
+                      className="img-fluid"
+                      src="https://freefrontend.dev/assets/rectangle-wide.png"
+                      alt="Team member"
+                    />
+                  </div>
+                  <h5 className="fw-bold" style={{ color: "#000" }}>
+                    Mr. Anuj Singh
+                  </h5>
+                  <div className="fw-bold" style={{ color: "#000" }}>
+                    Co-Founder 
                   </div>
                 </div>
-              </Reveal>
+              </div>
             </div>
 
-            {/* Member 3 (Centered) */}
-            <div className="col-lg-6 mx-auto">
-              <Reveal delay={0.3}>
-                <div className="card border-0 h-100">
-                  <div className="row g-0 align-items-center bg-light">
-                    <div className="col-sm-5">
-                      <img
-                        src="/assets/img/chefs/chefs-3.jpg"
-                        className="img-fluid w-100"
-                        alt="Team Member"
-                        style={{ objectFit: "cover", height: "100%", minHeight: "200px" }}
-                      />
-                    </div>
-                    <div className="col-sm-7">
-                      <div className="card-body">
-                        <h5 className="fw-bold" style={{ color: "#cda45e" }}>
-                          John Doe
-                        </h5>
-                        <div className="text-muted mb-3">UI Designer</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                        <div className="d-flex gap-2">
-                          <a
-                            className="btn btn-sm btn-outline-dark"
-                            href="#"
-                            onClick={(e) => e.preventDefault()}
-                            aria-label="Facebook"
-                          >
-                            <i className="bi bi-facebook"></i>
-                          </a>
-                          <a
-                            className="btn btn-sm btn-outline-dark"
-                            href="#"
-                            onClick={(e) => e.preventDefault()}
-                            aria-label="Twitter"
-                          >
-                            <i className="bi bi-twitter"></i>
-                          </a>
-                          <a
-                            className="btn btn-sm btn-outline-dark"
-                            href="#"
-                            onClick={(e) => e.preventDefault()}
-                            aria-label="LinkedIn"
-                          >
-                            <i className="bi bi-linkedin"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
+            {/* CARD 3 */}
+            <div className="col-md-4">
+              <div className="card text-center mb-3">
+                <div
+                  className="card-body p-0 pb-4"
+                  style={{ backgroundColor: "#cda45e" }}
+                >
+                  <div className="mb-4">
+                    <img
+                      className="img-fluid"
+                      src="https://freefrontend.dev/assets/rectangle-wide.png"
+                      alt="Team member"
+                    />
+                  </div>
+                  <h5 className="fw-bold" style={{ color: "#000" }}>
+                    Mr. Md Gayashu
+                  </h5>
+                  <div className="fw-bold" style={{ color: "#000" }}>
+                    Manager 
                   </div>
                 </div>
-              </Reveal>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Why Choose Our Restaurant */}
-      <section id="why-us" className="why-us section">
-        <div className="container section-title" data-aos="fade-up">
-          <h2>WHY US</h2>
-          <p>Why Choose Our Restaurant</p>
-        </div>
+      {/* Why Choose BESPOKEN CUISINE */}
+<section id="why-us" className="why-us section">
+  <div className="container section-title" data-aos="fade-up">
+    <h2>WHY US</h2>
+    <p>Why Choose BESPOKE CUISINE</p>
+  </div>
 
-        <div className="container">
-          <div className="row gy-4">
-            <div className="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-              <Reveal delay={0.1}>
-                <div className="card-item">
-                  <span>01</span>
-                  <h4>
-                    <a href="#" className="stretched-link" onClick={(e) => e.preventDefault()}>
-                      Lorem Ipsum
-                    </a>
-                  </h4>
-                  <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
-                </div>
-              </Reveal>
-            </div>
-
-            <div className="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-              <Reveal delay={0.2}>
-                <div className="card-item">
-                  <span>02</span>
-                  <h4>
-                    <a href="#" className="stretched-link" onClick={(e) => e.preventDefault()}>
-                      Repellat Nihil
-                    </a>
-                  </h4>
-                  <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p>
-                </div>
-              </Reveal>
-            </div>
-
-            <div className="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-              <Reveal delay={0.3}>
-                <div className="card-item">
-                  <span>03</span>
-                  <h4>
-                    <a href="#" className="stretched-link" onClick={(e) => e.preventDefault()}>
-                      Ad ad velit qui
-                    </a>
-                  </h4>
-                  <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
-                </div>
-              </Reveal>
-            </div>
+  <div className="container">
+    <div className="row gy-4">
+      <div className="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <Reveal delay={0.1}>
+          <div className="card-item">
+            <span>01</span>
+            <h4>
+              <a
+                href="#"
+                className="stretched-link"
+                onClick={(e) => e.preventDefault()}
+              >
+                All Cuisines, Fully Customizable
+              </a>
+            </h4>
+            <p>North Indian, South Indian,  Continental,  Mughlai, Street Food, Authentic Desi and more—menus tailored to your taste, spice level, and budget.
+            </p>
           </div>
-        </div>
-      </section>
+        </Reveal>
+      </div>
+
+      <div className="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <Reveal delay={0.2}>
+          <div className="card-item">
+            <span>02</span>
+            <h4>
+              <a
+                href="#"
+                className="stretched-link"
+                onClick={(e) => e.preventDefault()}
+              >
+                Fresh Ingredients & Hygienic 
+              </a>
+            </h4>
+            <p>
+            We cook fresh for every order with strict hygiene standards, we use quality products and consistent quality—so your guests enjoy every bite.
+            </p>
+          </div>
+        </Reveal>
+      </div>
+
+      <div className="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+        <Reveal delay={0.3}>
+          <div className="card-item">
+            <span>03</span>
+            <h4>
+              <a
+                href="#"
+                className="stretched-link"
+                onClick={(e) => e.preventDefault()}
+              >
+                Professional  Expertise
+              </a>
+            </h4>
+            <p>
+            Expertly managed catering solutions designed specifically for corporate events, ensuring smooth execution and a polished dining experience.
+            </p>
+          </div>
+        </Reveal>
+      </div>
+    </div>
+  </div>
+</section>
+
     </>
   );
 }

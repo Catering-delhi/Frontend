@@ -28,10 +28,10 @@ export default function Footer() {
                   <p>{t("footer.addressLine1")}</p>
                   <p>{t("footer.addressLine2")}</p>
                   <p className="mt-3">
-                    <strong>{t("footer.phoneLabel")}</strong> <span>{t("topbar.phone")}</span>
+                    <strong>{t("footer.phoneLabel")}</strong> <span>{t("+91-8595572638")}</span>
                   </p>
                   <p>
-                    <strong>{t("footer.emailLabel")}</strong> <span>{t("topbar.email")}</span>
+                    <strong>{t("footer.emailLabel")}</strong> <span>{t("bespokecuisineinc@gmail.com.email")}</span>
                   </p>
                 </div>
                 <div className="social-links d-flex mt-4">
@@ -41,7 +41,7 @@ export default function Footer() {
                   <a href="#" onClick={(e) => e.preventDefault()} aria-label="Facebook">
                     <i className="bi bi-facebook"></i>
                   </a>
-                  <a href="#" onClick={(e) => e.preventDefault()} aria-label="Instagram">
+                  <a href="https://www.instagram.com/bespokecuisineinc/?igsh=MWk5MWE1eG44bGNxeQ%3D%3D#" onClick={(e) => e.preventDefault()} aria-label="Instagram">
                     <i className="bi bi-instagram"></i>
                   </a>
                   <a href="#" onClick={(e) => e.preventDefault()} aria-label="LinkedIn">
@@ -65,9 +65,6 @@ export default function Footer() {
                 <Link href="/menu">{t("nav.menu")}</Link>
               </li>
               <li>
-                <Link href="/events">{t("nav.events")}</Link>
-              </li>
-              <li>
                 <Link href="/contact">{t("nav.contact")}</Link>
               </li>
             </ul>
@@ -76,12 +73,6 @@ export default function Footer() {
           <div className="col-lg-3 col-md-3 footer-links">
             <h4 style={{ fontSize: "1.3rem" }}>{t("footer.servicesTitle")}</h4>
             <ul style={{ fontSize: "1.05rem" }}>
-              <li>
-                <Link href="/book-a-table">{t("nav.book")}</Link>
-              </li>
-              <li>
-                <Link href="/events">{t("nav.events")}</Link>
-              </li>
               <li>
                 <Link href="/menu">{t("nav.menu")}</Link>
               </li>
@@ -101,16 +92,6 @@ export default function Footer() {
           © <span>{t("footer.copyright")}</span>{" "}
           <strong className="px-1 sitename">{t("site.name")}</strong> <span>{t("footer.rights")}</span>
         </p>
-        <div className="credits" style={{ fontSize: "0.95rem" }}>
-          Designed by{" "}
-          <a href="https://bootstrapmade.com/" target="_blank" rel="noopener noreferrer">
-            BootstrapMade
-          </a>{" "}
-          Distributed by{" "}
-          <a href="https://themewagon.com" target="_blank" rel="noopener noreferrer">
-            ThemeWagon
-          </a>
-        </div>
       </div>
     </footer>
   );

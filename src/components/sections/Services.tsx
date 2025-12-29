@@ -14,32 +14,38 @@ const services: Service[] = [
   {
     icon: "bi-gift-fill",
     title: "Birthday Catering",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    description:
+      "Bespoke CUISINE creates birthday menus with starters, mains, desserts, mocktails, optional live counters, themed setup, and professional catering services.",
   },
   {
     icon: "bi-cake2-fill",
-    title: "Wedding Service",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    title: "Wedding Catering",
+    description:
+      "Bespoke Cuisine curates premium wedding feasts with customised menus, ritual-based service flow, trained staff, and live food stations.",
   },
   {
     icon: "bi-music-note-beamed",
     title: "Party Catering",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    description:
+      "Bespoke Cuisine delivers party catering with crowd-favourite starters, mains, desserts, and optional bar snacks prepared fresh.",
   },
   {
     icon: "bi-calendar-event",
-    title: "Event Catering",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    title: "Corporate & Office Events",
+    description:
+      "Delivering refined catering solutions that elevate corporate events with precision, consistency, taste, and professional execution.",
   },
   {
     icon: "bi-person-badge",
-    title: "Corporate Service",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    title: "Custom Menu Options",
+    description:
+      "Customised menus designed to match corporate preferences, dietary requirements, event formats, and professional dining standards.",
   },
   {
     icon: "bi-lightning-charge",
     title: "Catering On Demand",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    description:
+      "Quick-turnaround catering for small gatherings with efficient setup, focused menus, and quality-controlled execution.",
   },
 ];
 
@@ -53,23 +59,55 @@ export default function Services() {
               <Reveal>
                 <h3>Our Services</h3>
                 <p>
-                  inappropriate behavior is often laughed off as "boys will be boys," women face higher conduct standards{" "}
+                  <span style={{ color: "#cda45e" }}>BESPOKE CUISINE </span>
+                  delivers premium catering for birthdays, weddings, private
+                  parties, and corporate events.
                   <br className="d-none d-md-block" />
-                  especially in the workplace. That's why it's crucial that, as women.
+                  Choose from multi-cuisine menus, live counters, and tailored
+                  packages built around your guests, budget, and expectations.
                 </p>
               </Reveal>
             </div>
           </div>
         </div>
+
         <div className="row">
           {services.map((service, idx) => (
-            <div key={idx} className="col-xl-4 col-md-6 mb-4">
+            <div
+              key={idx}
+              className="col-xl-4 col-md-6 mb-4 d-flex"
+            >
               <Reveal delay={idx * 0.1}>
-                <div className="single_service text-center h-100">
+                <div
+                  className="single_service text-center flex-fill"
+                  style={{
+                    border: "1px solid rgba(205, 164, 94, 0.35)",
+                    borderRadius: "12px",
+                    padding: "28px 22px",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "flex-start",
+                    transition: "transform 200ms ease, box-shadow 200ms ease",
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.transform = "translateY(-4px)";
+                    e.currentTarget.style.boxShadow =
+                      "0 10px 30px rgba(0,0,0,0.08)";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.transform = "translateY(0)";
+                    e.currentTarget.style.boxShadow = "none";
+                  }}
+                >
                   <div className="service_icon mb-3">
-                    <i className={`${service.icon}`} style={{ fontSize: "3rem", color: "#cda45e" }}></i>
+                    <i
+                      className={service.icon}
+                      style={{ fontSize: "3rem", color: "#cda45e" }}
+                    />
                   </div>
+
                   <h4 className="mb-3">{service.title}</h4>
+
                   <p>{service.description}</p>
                 </div>
               </Reveal>
@@ -80,4 +118,3 @@ export default function Services() {
     </section>
   );
 }
-

@@ -8,80 +8,196 @@ import Reveal from "@/components/ui/Reveal";
 export default function Contact() {
   const { t } = useTranslation("common");
 
-  // Change this image to whatever you want (must exist in /public/assets/img/...)
-  const imageSrc = "/assets/img/about.jpg";
+  const showcaseImg = "/assets/img/contactpage.webp";
 
   return (
-    <section id="contact" className="contact section">
-      <SectionTitle kicker={t("contact.kicker")} title={t("contact.title")} />
-
+    <section id="contact" className="contact section py-5">
       <div className="container" data-aos="fade-up" data-aos-delay="100">
-        <div className="row gy-4 align-items-center">
-          {/* Image (TOP on mobile, RIGHT on desktop) */}
-          <div className="col-lg-6 order-1 order-lg-2">
-            <Reveal>
-              <img
-                src={imageSrc}
-                className="img-fluid about-img"
-                alt={t("contact.title")}
-                loading="lazy"
-              />
-            </Reveal>
-          </div>
+        <div className="container section-title" data-aos="fade-up">
+          <SectionTitle
+            kicker={t("contact.kicker", { defaultValue: "Contact" })}
+            title={t("contact.title", { defaultValue: "Contact" })}
+          />
+        </div>
 
-          {/* Address/Info (BELOW image on mobile, LEFT on desktop) */}
-          <div className="col-lg-6 order-2 order-lg-1">
-            <Reveal>
-              <div className="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-                <i className="bi bi-geo-alt flex-shrink-0" />
-                <div>
-                  <h3>{t("contact.locationTitle")}</h3>
-                  <p>{t("contact.locationValue")}</p>
+        <div
+          style={{
+            border: "1px solid #cda45e",
+            paddingLeft: 30,
+            paddingRight: 30,
+            paddingTop: 24,
+            paddingBottom: 24,
+          }}
+        >
+          <div className="row gy-4 align-items-center justify-content-between">
+            <div className="col-lg-7 col-xl-6">
+              <div className="row gy-4">
+               
+                <div className="col-md-6">
+                  <Reveal>
+                    <div
+                      className="info-item d-flex"
+                      data-aos="fade-up"
+                      data-aos-delay="300"
+                      style={{ gap: 14, padding: "14px 0" }}
+                    >
+                      <i
+                        className="bi bi-geo-alt flex-shrink-0"
+                        style={{ fontSize: 34, lineHeight: 1 }}
+                      />
+                      <div>
+                        <h3
+                          style={{
+                            fontSize: 24,
+                            fontWeight: 700,
+                            margin: "0 0 8px",
+                          }}
+                        >
+                          {t("contact.locationTitle", {
+                            defaultValue: "Location",
+                          })}
+                        </h3>
+                        <p style={{ fontSize: 18, margin: 0 }}>
+                          {t("contact.locationValue")}
+                        </p>
+                      </div>
+                    </div>
+                  </Reveal>
+                </div>
+
+                <div className="col-md-6">
+                  <Reveal>
+                    <div
+                      className="info-item d-flex"
+                      data-aos="fade-up"
+                      data-aos-delay="400"
+                      style={{ gap: 14, padding: "14px 0" }}
+                    >
+                      <i
+                        className="bi bi-clock flex-shrink-0"
+                        style={{ fontSize: 34, lineHeight: 1 }}
+                      />
+                      <div>
+                        <h3
+                          style={{
+                            fontSize: 24,
+                            fontWeight: 700,
+                            margin: "0 0 8px",
+                          }}
+                        >
+                          {t("contact.hoursTitle", {
+                            defaultValue: "Open Hours",
+                          })}
+                        </h3>
+                        <p style={{ fontSize: 18, margin: 0 }}>
+                          {t("contact.hoursLine1")}
+                          <br />
+                          {t("contact.hoursLine2")}
+                        </p>
+                      </div>
+                    </div>
+                  </Reveal>
+                </div>
+
+                <div className="col-md-6">
+                  <Reveal>
+                    <div
+                      className="info-item d-flex"
+                      data-aos="fade-up"
+                      data-aos-delay="400"
+                      style={{ gap: 14, padding: "14px 0" }}
+                    >
+                      <i
+                        className="bi bi-telephone flex-shrink-0"
+                        style={{ fontSize: 34, lineHeight: 1 }}
+                      />
+                      <div>
+                        <h3
+                          style={{
+                            fontSize: 24,
+                            fontWeight: 700,
+                            margin: "0 0 8px",
+                          }}
+                        >
+                          {t("contact.callTitle", { defaultValue: "Call Us" })}
+                        </h3>
+                        <p style={{ fontSize: 18, margin: 0 }}>
+                          <a
+                            className="text-reset"
+                            href={`tel:${t("topbar.phone")}`}
+                            style={{ textDecoration: "none", fontSize: 18 }}
+                          >
+                            {t("+91-8595572638")}
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                  </Reveal>
+                </div>
+
+                <div className="col-md-6">
+                  <Reveal>
+                    <div
+                      className="info-item d-flex"
+                      data-aos="fade-up"
+                      data-aos-delay="500"
+                      style={{ gap: 14, padding: "14px 0" }}
+                    >
+                      <i
+                        className="bi bi-envelope flex-shrink-0"
+                        style={{ fontSize: 34, lineHeight: 1 }}
+                      />
+                      <div>
+                        <h3
+                          style={{
+                            fontSize: 24,
+                            fontWeight: 700,
+                            margin: "0 0 8px",
+                          }}
+                        >
+                          {t("contact.emailTitle", {
+                            defaultValue: "Email Us",
+                          })}
+                        </h3>
+                        <p style={{ fontSize: 18, margin: 0 }}>
+                          <a
+                            className="text-reset"
+                            href={`mailto:${t("topbar.email")}`}
+                            style={{ textDecoration: "none", fontSize: 18 }}
+                          >
+                            {t("bespokecuisineinc@gmail.com.email")}
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                  </Reveal>
                 </div>
               </div>
-            </Reveal>
+            </div>
 
-            <Reveal>
-              <div className="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                <i className="bi bi-clock flex-shrink-0" />
-                <div>
-                  <h3>{t("contact.hoursTitle")}</h3>
-                  <p>
-                    {t("contact.hoursLine1")}
-                    <br />
-                    {t("contact.hoursLine2")}
-                  </p>
-                </div>
-              </div>
-            </Reveal>
-
-            <Reveal>
-              <div className="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                <i className="bi bi-telephone flex-shrink-0" />
-                <div>
-                  <h3>{t("contact.callTitle")}</h3>
-                  <p>
-                    <a className="text-reset" href={`tel:${t("topbar.phone")}`} style={{ textDecoration: "none" }}>
-                      {t("topbar.phone")}
-                    </a>
-                  </p>
-                </div>
-              </div>
-            </Reveal>
-
-            <Reveal>
-              <div className="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
-                <i className="bi bi-envelope flex-shrink-0" />
-                <div>
-                  <h3>{t("contact.emailTitle")}</h3>
-                  <p>
-                    <a className="text-reset" href={`mailto:${t("topbar.email")}`} style={{ textDecoration: "none" }}>
-                      {t("topbar.email")}
-                    </a>
-                  </p>
-                </div>
-              </div>
-            </Reveal>
+            {/* RIGHT: image */}
+            <div
+              className="col-lg-5 col-xl-5 d-flex justify-content-center"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <Reveal>
+                <img
+                  src={showcaseImg}
+                  className="img-fluid rounded shadow"
+                  alt={t("contact.imageAlt", {
+                    defaultValue: "Restaurant contact showcase",
+                  })}
+                  style={{
+                    maxWidth: 650,
+                    width: "100%",
+                    height: 520, // keep big, like your screenshot style
+                    objectFit: "cover",
+                  }}
+                  loading="lazy"
+                />
+              </Reveal>
+            </div>
           </div>
         </div>
       </div>

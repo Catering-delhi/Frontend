@@ -17,14 +17,14 @@ export default function PageTitle({ title, description, breadcrumbLabel }: PageT
   return (
     <div
       className="page-title position-relative"
-      style={{ backgroundImage: "url(/assets/img/page-title-bg.webp)" }}
+      style={{ backgroundImage: "url(/assets/img/contact.webp)" }}
     >
       <div className="container position-relative">
         <h1>
           {title}
           <br />
         </h1>
-        {description && <p>{description}</p>}
+        
 
         <nav className="breadcrumbs">
           <ol>

@@ -48,14 +48,6 @@ export default function Header() {
     <header id="header" className="header fixed-top">
       <div className="topbar d-flex align-items-center">
         <div className="container d-flex justify-content-center justify-content-md-between">
-          <div className="contact-info d-flex align-items-center">
-            <i className="bi bi-envelope d-flex align-items-center">
-              <a href={`mailto:${t("topbar.email")}`}>{t("topbar.email")}</a>
-            </i>
-            <i className="bi bi-phone d-flex align-items-center ms-4">
-              <span>{t("topbar.phone")}</span>
-            </i>
-          </div>
 
           <div className="languages d-none d-md-flex align-items-center">
             <ul>
@@ -68,7 +60,7 @@ export default function Header() {
                   {locale === "en" ? <strong>EN</strong> : "EN"}
                 </button>
               </li>
-              <li>
+              <li style={{ textAlign: "left" }}>
                 <button
                   type="button"
                   onClick={() => setLocale("hi")}
@@ -140,10 +132,6 @@ export default function Header() {
               }}
             />
           </nav>
-
-          <Link className="btn-book-a-table d-none d-xl-block" href="/book-a-table">
-            {t("nav.book")}
-          </Link>
         </div>
       </div>
     </header>
