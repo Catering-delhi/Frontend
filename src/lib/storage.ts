@@ -13,6 +13,5 @@ export function safeSet(key: string, value: string): void {
     if (typeof window === "undefined") return;
     window.localStorage.setItem(key, value);
   } catch {
-    // ignore
   }
 }

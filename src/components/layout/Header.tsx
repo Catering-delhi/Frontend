@@ -51,7 +51,7 @@ export default function Header() {
 
           <div className="languages d-none d-md-flex align-items-center">
             <ul>
-              <li>
+              {/* <li>
                 <button
                   type="button"
                   onClick={() => setLocale("en")}
@@ -59,8 +59,8 @@ export default function Header() {
                 >
                   {locale === "en" ? <strong>EN</strong> : "EN"}
                 </button>
-              </li>
-              <li style={{ textAlign: "left" }}>
+              </li> */}
+              {/* <li style={{ textAlign: "left" }}>
                 <button
                   type="button"
                   onClick={() => setLocale("hi")}
@@ -68,12 +68,8 @@ export default function Header() {
                 >
                   {locale === "hi" ? <strong>HI</strong> : "HI"}
                 </button>
-              </li>
-              <li className="ms-3">
-                <button type="button" className="btn btn-sm btn-outline-secondary" onClick={toggle}>
-                  {theme === "dark" ? <i className="bi bi-moon-stars" /> : <i className="bi bi-sun" />}
-                </button>
-              </li>
+              </li> */}
+              
             </ul>
           </div>
         </div>
@@ -83,7 +79,7 @@ export default function Header() {
         <div className="container position-relative d-flex align-items-center justify-content-between">
           <Link className="logo d-flex align-items-center me-auto me-xl-0" href="/" onClick={closeMobile}>
             <img
-              src="/assets/img/logo.png"
+              src="/assets/img/logo2.png"
               className="logo-img"
               alt={`${t("site.name")} logo`}
               style={{ maxWidth: "50px", maxHeight: "50px", width: "auto", height: "auto" }}

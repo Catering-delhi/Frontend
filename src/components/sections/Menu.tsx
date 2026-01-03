@@ -1,14 +1,16 @@
 // src/components/sections/Menu.tsx
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 import Reveal from "@/components/ui/Reveal";
+import Modal from "@/components/ui/Modal";
+import { menuItems, MenuCategory } from "@/data/menu";
 
 interface OrderItem {
   id: number;
   image: string;
-  price: string;
   title: string;
   description: string;
 }
@@ -17,48 +19,77 @@ const orders: OrderItem[] = [
   {
     id: 1,
     image: "/assets/img/order/order-1.png",
-    price: "10.00",
-    title: "Weastern Set Meal 01",
-    description: "Chicken Fried Rice   |   Crispy Chicken fry\nWeastern Pickle   |   Mixed Vegetable\nSoft Drinks",
+    title: "Appetizers",
+    description: "Bespoke Cuisine brings the thoughtfully crafted appetizers that set the tone for an exceptional dining experience.",
   },
   {
     id: 2,
     image: "/assets/img/order/order-2.png",
-    price: "10.00",
-    title: "Weastern Set Meal 02",
-    description: "Chicken Fried Rice   |   Crispy Chicken fry\nWeastern Pickle   |   Mixed Vegetable\nSoft Drinks",
+    title: "Chaats",
+    description: "Classic Indian and International chaats by Bespoke Cuisine, crafted with freshness and refined presentation.",
   },
   {
     id: 3,
     image: "/assets/img/order/order-3.png",
-    price: "10.00",
-    title: "Weastern Set Meal 03",
-    description: "Chicken Fried Rice   |   Crispy Chicken fry\nWeastern Pickle   |   Mixed Vegetable\nSoft Drinks",
+    title: "Continental ",
+    description: "Timeless continental dishes by Bespoke Cuisine, prepared with quality ingredients and balanced flavours.",
   },
   {
     id: 4,
     image: "/assets/img/order/order-4.png",
-    price: "10.00",
-    title: "Weastern Set Meal 01",
-    description: "Chicken Fried Rice   |   Crispy Chicken fry\nWeastern Pickle   |   Mixed Vegetable\nSoft Drinks",
+    title: "Main Course",
+    description: "The Soul of food, Signature main course creations by Bespoke Cuisine, crafted for depth, balance, and lasting flavour.",
   },
   {
     id: 5,
     image: "/assets/img/order/order-5.png",
-    price: "10.00",
-    title: "Weastern Set Meal 02",
-    description: "Chicken Fried Rice   |   Crispy Chicken fry\nWeastern Pickle   |   Mixed Vegetable\nSoft Drinks",
+    title: "Desserts",
+    description: "A refined collection of desserts by Bespoke Cuisine.",
   },
   {
     id: 6,
     image: "/assets/img/order/order-6.png",
-    price: "10.00",
-    title: "Weastern Set Meal 03",
-    description: "Chicken Fried Rice   |   Crispy Chicken fry\nWeastern Pickle   |   Mixed Vegetable\nSoft Drinks",
+    title: "Fruit and Shakes",
+    description: "Light, fresh salads and nourishing soups by Bespoke Cuisine.",
   },
+  {
+    id: 7,
+    image: "/assets/img/order/order-7.png",
+    title: "South Indian",
+    description: "Authentic South Indian cuisine by Bespoke Cuisine, featuring traditional flavors and spices.",
+  },
+  {
+    id: 8,
+    image: "/assets/img/order/order-8.png",
+    title: "Soups and Salads",
+    description: "Warm and comforting soups by Bespoke Cuisine, perfect for any occasion.",
+  },
+  {
+    id: 9,
+    image: "/assets/img/order/order-9.png",
+    title: "Roti and Rice",
+    description: "Freshly made rotis and aromatic rice dishes by Bespoke Cuisine.",
+  },
+  
 ];
 
+const orderToCategories: Record<number, MenuCategory[]> = {
+  1: ['appetizers'], // Appetizers
+  2: ['chaats'], // Chaats
+  3: ['continental'], // Continental
+  4: ['main_course'], // Main Course
+  5: ['desserts'], // Desserts
+  6: ['salad_soups'], // Salad and Soups
+  7: ['south_indian'], // South Indian
+  8: ['soups'], // Soups
+  9: ['roti_rice'], // Roti and Rice
+};
+
 export default function Menu() {
+  const { t } = useTranslation("common");
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedOrder, setSelectedOrder] = useState<OrderItem | null>(null);
+
   return (
     <section id="menu" className="menu section order_area">
       <div className="container">
@@ -80,7 +111,7 @@ export default function Menu() {
           {orders.map((order, idx) => (
             <div key={order.id} className="col-xl-4 col-md-6 mb-4">
               <Reveal delay={idx * 0.1}>
-                <div className="single_order h-100">
+                <div className="single_order d-flex flex-column" style={{ minHeight: "500px" }}>
                   <div className="order_thumb position-relative">
                     <img
                       src={order.image}
@@ -104,9 +135,6 @@ export default function Menu() {
                         }
                       }}
                     />
-                    <div className="order_prise position-absolute">
-                      <span>${order.price}</span>
-                    </div>
                   </div>
                   <div className="order_info p-4">
                     <h3 className="mb-3">
@@ -117,9 +145,7 @@ export default function Menu() {
                     <p className="mb-3" style={{ whiteSpace: "pre-line", lineHeight: "1.8" }}>
                       {order.description}
                     </p>
-                    <Link href="/contact" className="boxed_btn">
-                      Order Now!
-                    </Link>
+                    <button className="btn see-more-btn" onClick={() => { setSelectedOrder(order); setModalOpen(true); }}>See More</button>
                   </div>
                 </div>
               </Reveal>
@@ -127,6 +153,28 @@ export default function Menu() {
           ))}
         </div>
       </div>
+      <Modal open={modalOpen} onClose={() => setModalOpen(false)} title={selectedOrder?.title}>
+        <div className="row">
+          {menuItems
+            .filter(item => selectedOrder && orderToCategories[selectedOrder.id]?.includes(item.category))
+            .map((item) => (
+            <div key={item.id} className="col-md-6 mb-3">
+              <div className="d-flex">
+                <img
+                  src={item.image}
+                  alt={t(item.nameKey)}
+                  className="img-fluid me-3"
+                  style={{ width: "80px", height: "80px", objectFit: "cover" }}
+                />
+                <div>
+                  <h5>{t(item.nameKey)}</h5>
+                  <p className="mb-1">{t(item.descKey)}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </Modal>
     </section>
   );
 }

@@ -115,6 +115,18 @@ section {
   border-color: #cda45e;
 }
 
+.see-more-btn {
+  border-color: #cda45e;
+  color: #cda45e;
+  transition: all 0.3s ease;
+}
+
+.see-more-btn:hover {
+  background-color: #cda45e;
+  color: white;
+  border-color: #cda45e;
+}
+
 /* Services section styles */
 .service_area {
   padding: 60px 0;

@@ -61,25 +61,109 @@
         "name": "Lobster Bisque",
         "desc": "Lorem, deren, trataro, filede, nerada"
       },
+      "grilled_snacks": {
+        "name": "Grilled Snacks",
+        "desc": "Delicious snacks grilled to perfection"
+      },
+      "tandoor_snacks": {
+        "name": "Tandoor Snacks",
+        "desc": "Authentic tandoor-baked appetizers"
+      },
+      "fried_snacks": {
+        "name": "Fried Snacks",
+        "desc": "Crispy fried snacks with various flavors"
+      },
+      "spicy_snacks": {
+        "name": "Spicy Snacks",
+        "desc": "Hot and spicy snack options"
+      },
+      "dairy_snacks": {
+        "name": "Dairy Snacks",
+        "desc": "Creamy dairy-based appetizers"
+      },
+      "conti_snacks": {
+        "name": "Conti Snacks",
+        "desc": "Continental-style snack selections"
+      },
       "bread_barrel": {
         "name": "Bread Barrel",
         "desc": "Lorem, deren, trataro, filede, nerada"
       },
       "crab_cake": {
-        "name": "Crab Cake",
+        "name": "Crab ",
         "desc": "A delicate crab cake served on a toasted roll with lettuce and tartar sauce"
       },
       "caesar": {
         "name": "Caesar Selections",
         "desc": "Lorem, deren, trataro, filede, nerada"
       },
+      "north_indian_classics": {
+        "name": "North Indian Classics",
+        "desc": "Traditional North Indian dishes with rich flavors and spices"
+      },
+      "rajasthani_delights": {
+        "name": "Rajasthani Delights",
+        "desc": "Authentic Rajasthani cuisine featuring royal flavors"
+      },
+      "taste_of_uttar_pradesh": {
+        "name": "Taste of Uttar Pradesh",
+        "desc": "Delicious dishes from Uttar Pradesh with unique regional tastes"
+      },
+      "flavours_of_bihar": {
+        "name": "Flavours of Bihar",
+        "desc": "Traditional Bihari cuisine with distinctive spices"
+      },
+      "punjabi_special": {
+        "name": "Punjabi Special",
+        "desc": "Rich and flavorful Punjabi dishes"
+      },
       "tuscan_grilled": {
         "name": "Tuscan Grilled",
         "desc": "Grilled chicken with provolone, artichoke hearts, and roasted red pesto"
       },
+      "traditional_indian": {
+        "name": "Traditional Indian",
+        "desc": "Classic Indian desserts with rich flavors"
+      },
+      "kheers": {
+        "name": "Kheers",
+        "desc": "Creamy rice pudding with nuts and saffron"
+      },
+      "halwas": {
+        "name": "Halwas",
+        "desc": "Sweet and dense Indian confectionery"
+      },
+      "cold_desserts": {
+        "name": "Cold Desserts",
+        "desc": "Refreshing chilled desserts"
+      },
+      "western_desserts": {
+        "name": "Western Desserts",
+        "desc": "Classic Western-style sweet treats"
+      },
+      "live_desserts": {
+        "name": "Live Desserts",
+        "desc": "Desserts prepared live in front of you"
+      },
       "mozzarella": {
         "name": "Mozzarella Stick",
         "desc": "Lorem, deren, trataro, filede, nerada"
+      },
+      "imported": {
+        "name": "Imported",
+        "desc": "Imported ingredients in fresh preparations"
+      },
+      "fruit_shakes": {
+        "name": "Fruit Shakes",
+        "desc": "Refreshing fruit-based shakes"
+      },
+      "mojito": {
+        "name": "Mojito",
+        "desc": "Classic mojito with fresh mint and lime"
+      },
+      "fruit_juice": {
+        "name": "Fruit Juice",
+        "desc": "Freshly squeezed fruit juices"
       },
       "greek_salad": {
         "name": "Greek Salad",
@@ -89,10 +173,119 @@
         "name": "Spinach Salad",
         "desc": "Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette"
       },
+      "tomato_basil_shorba": {
+        "name": "Tomato Basil Shorba",
+        "desc": "Aromatic tomato soup with fresh basil"
+      },
+      "lemon_coriander_soup": {
+        "name": "Lemon Coriander Soup",
+        "desc": "Refreshing soup with lemon and coriander flavors"
+      },
+      "khou_suey": {
+        "name": "Khou Suey",
+        "desc": "Burmese coconut curry noodle soup"
+      },
+      "veg_manchow_soup": {
+        "name": "Veg Manchow Soup",
+        "desc": "Spicy vegetable soup with noodles and mushrooms"
+      },
+      "indian": {
+        "name": "Indian",
+        "desc": "Traditional Indian soups with authentic flavors"
+      },
+      "green_leaves": {
+        "name": "Green Leaves",
+        "desc": "Nutritious soups made with fresh green vegetables"
+      },
+      "add_ons": {
+        "name": "Add Ons",
+        "desc": "Additional ingredients to enhance your soup"
+      },
+      "continental": {
+        "name": "Continental",
+        "desc": "European-style soups with refined tastes"
+      },
       "lobster_roll": {
-        "name": "Lobster Roll",
+        "name": "Pasta",
         "desc": "Plump lobster meat, mayo and crisp lettuce on a toasted bulky roll"
+      },
+      "tawa_paratha_live": {
+        "name": "Tawa Paratha Live",
+        "desc": "Freshly cooked paratha on tawa with live preparation"
+      },
+      "breads": {
+        "name": "Breads",
+        "desc": "Assortment of freshly baked breads"
+      },
+      "rice": {
+        "name": "Rice",
+        "desc": "Aromatic and flavorful rice dishes"
+      },
+      "dimsum": {
+        "name": "Dimsum",
+        "desc": "Steamed dumplings filled with savory meats and vegetables"
+      },
+      "sushi": {
+        "name": "Sushi",
+        "desc": "Fresh sushi rolls with rice, seaweed, and assorted fillings"
+      },
+      "pizza": {
+        "name": "Pizza",
+        "desc": "Wood-fired pizza with fresh toppings and melted cheese"
+      },
+      "avocado_bar": {
+        "name": "Avocado Bar",
+        "desc": "Fresh avocado preparations with various seasonings and accompaniments"
+      },
+      "shawarma": {
+        "name": "Shawarma",
+        "desc": "Marinated meat slowly roasted and served with pita and sauces"
+      },
+      "pasta": {
+        "name": "Pasta",
+        "desc": "Homemade pasta with rich sauces and fresh ingredients"
+      },
+      "delhi_chaat": {
+        "name": "Delhi Chaat",
+        "desc": "Traditional Delhi street food with tangy and spicy flavors"
+      },
+      "kolkata_chaat": {
+        "name": "Kolkata Chaat",
+        "desc": "Bengali style chaat with unique spices and ingredients"
+      },
+      "fusion_chaat": {
+        "name": "Fusion Chaat",
+        "desc": "Creative blend of Indian and international flavors"
+      },
+      "continental_chaat": {
+        "name": "Continental Chaat",
+        "desc": "Western-inspired chaat with a modern twist"
+      },
+      "health_conscious_chaat": {
+        "name": "Health Conscious Chaat",
+        "desc": "Nutritious chaat made with healthy ingredients"
+      },
+      "millet_chaat": {
+        "name": "Millet Chaat",
+        "desc": "Wholesome chaat prepared with millets and fresh veggies"
+      },
+      "idli_dosa": {
+        "name": "Idli & Dosa",
+        "desc": "Steamed rice cakes and crispy fermented crepes served with chutneys"
+      },
+      "vada": {
+        "name": "Vada",
+        "desc": "Crispy lentil fritters served with coconut chutney and sambar"
+      },
+      "sambar": {
+        "name": "Sambar",
+        "desc": "Tangy lentil stew with vegetables and aromatic spices"
+      },
+      "rasam": {
+        "name": "Rasam",
+        "desc": "Spicy South Indian soup made with tamarind and pepper"
       }
+      
     }
   },
   "specials": {
@@ -130,46 +323,6 @@
         "title": "Est eveniet ipsam sindera pad rone matrelat sando reda",
         "italic": "Omnis blanditiis saepe eos autem qui sunt debitis porro quia.",
         "desc": "Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel"
-      }
-    }
-  },
-  "book": {
-    "kicker": "RESERVATION",
-    "title": "Book a Table",
-    "form": {
-      "name": "Your Name",
-      "email": "Your Email",
-      "phone": "Your Phone",
-      "date": "Date",
-      "time": "Time",
-      "people": "# of people",
-      "message": "Message",
-      "loading": "Loading",
-      "success": "Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!",
-      "submit": "Book a Table"
-    }
-  },
-  
-  "gallery": {
-    "kicker": "Gallery",
-    "title": "Some photos from Our Restaurant",
-    "open": "Open image"
-  },
-  "chefs": {
-    "kicker": "Team",
-    "title": "Necessitatibus eius consequatur",
-    "items": {
-      "walter": {
-        "name": "Walter White",
-        "role": "Master Chef"
-      },
-      "sarah": {
-        "name": "Sarah Jhonson",
-        "role": "Patissier"
-      },
-      "william": {
-        "name": "William Anderson",
-        "role": "Cook"
       }
     }
   },
