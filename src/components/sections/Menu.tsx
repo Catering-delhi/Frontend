@@ -7,6 +7,7 @@ import { useTranslation } from "react-i18next";
 import Reveal from "@/components/ui/Reveal";
 import Modal from "@/components/ui/Modal";
 import { menuItems, MenuCategory } from "@/data/menu";
+import { color } from "framer-motion";
 
 interface OrderItem {
   id: number;
@@ -49,7 +50,7 @@ const orders: OrderItem[] = [
   {
     id: 6,
     image: "/assets/img/order/order-6.png",
-    title: "Fruit and Shakes",
+    title: "Soups and Salads",
     description: "Light, fresh salads and nourishing soups by Bespoke Cuisine.",
   },
   {
@@ -61,28 +62,28 @@ const orders: OrderItem[] = [
   {
     id: 8,
     image: "/assets/img/order/order-8.png",
-    title: "Soups and Salads",
+    title: "Fusion Main Course ",
     description: "Warm and comforting soups by Bespoke Cuisine, perfect for any occasion.",
   },
   {
     id: 9,
     image: "/assets/img/order/order-9.png",
-    title: "Roti and Rice",
+    title: "Breads and Rices",
     description: "Freshly made rotis and aromatic rice dishes by Bespoke Cuisine.",
   },
   
 ];
 
 const orderToCategories: Record<number, MenuCategory[]> = {
-  1: ['appetizers'], // Appetizers
-  2: ['chaats'], // Chaats
-  3: ['continental'], // Continental
-  4: ['main_course'], // Main Course
-  5: ['desserts'], // Desserts
-  6: ['salad_soups'], // Salad and Soups
-  7: ['south_indian'], // South Indian
-  8: ['soups'], // Soups
-  9: ['roti_rice'], // Roti and Rice
+  1: ['appetizers'], 
+  2: ['chaats'],
+  3: ['continental'], 
+  4: ['main_course'], 
+  5: ['desserts'],
+  6: ['salad_soups'],
+  7: ['south_indian'], 
+  8: ['soups'],
+  9: ['roti_rice'],
 };
 
 export default function Menu() {
@@ -97,12 +98,8 @@ export default function Menu() {
           <div className="col-xl-12">
             <div className="section_title mb-5 text-center" style={{ marginBottom: "70px" }}>
               <Reveal>
-                <h3>Popular Orders</h3>
-                <p>
-                  inappropriate behavior is often laughed off as "boys will be boys," women face higher conduct standards{" "}
-                  <br className="d-none d-md-block" />
-                  especially in the workplace. That's why it's crucial that, as women.
-                </p>
+                <h3>Our <span style={{ color: "#d9b35a" }}>Menu</span> Options</h3>
+                <h4>Carefully crafted menu options offering variety, balance, and refined flavours.</h4>
               </Reveal>
             </div>
           </div>

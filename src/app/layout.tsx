@@ -14,15 +14,16 @@ import WhatsAppFloat from "@/components/layout/WhatsAppFloat";
 export const metadata: Metadata = {
   title: "Restaurantly",
   description: "Restaurantly landing website built with Next.js",
+  icons: {
+    icon: "/assets/img/logo.png",
+    apple: "/assets/img/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" data-bs-theme="dark" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/assets/img/favicon.png" />
-        <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png" />
-
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link

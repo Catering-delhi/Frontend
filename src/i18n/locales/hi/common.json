@@ -1,63 +1,8 @@
 {
-  "site": { "name": "Restaurantly" },
 
-  "topbar": {
-    "email": "contact@example.com",
-    "phone": "+1 5589 55488 55"
-  },
+  
 
-  "nav": {
-    "home": "होम",
-    "about": "हमारे बारे में",
-    "menu": "मेनू",
-    "specials": "विशेष",
-    "events": "इवेंट्स",
-    "chefs": "शेफ्स",
-    "gallery": "गैलरी",
-    "contact": "संपर्क",
-    "book": "टेबल बुक करें",
-
-    "dropdown": "ड्रॉपडाउन",
-    "dropdown1": "ड्रॉपडाउन 1",
-    "dropdown2": "ड्रॉपडाउन 2",
-    "dropdown3": "ड्रॉपडाउन 3",
-    "dropdown4": "ड्रॉपडाउन 4",
-    "deepDropdown": "डीप ड्रॉपडाउन",
-    "deep1": "डीप ड्रॉपडाउन 1",
-    "deep2": "डीप ड्रॉपडाउन 2",
-    "deep3": "डीप ड्रॉपडाउन 3",
-    "deep4": "डीप ड्रॉपडाउन 4",
-    "deep5": "डीप ड्रॉपडाउन 5"
-  },
-
-  "hero": {
-    "welcome": "स्वागत है",
-    "subtitle": "18+ वर्षों से शानदार भोजन परोस रहे हैं!",
-    "ctaMenu": "हमारा मेनू",
-    "ctaBook": "टेबल बुक करें",
-    "playVideo": "वीडियो चलाएँ"
-  },
-
-  "about": {
-    "title": "Voluptatem dignissimos provident",
-    "italic": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "bullets": {
-      "1": "Ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "2": "Duis aute irure dolor in reprehenderit in voluptate velit.",
-      "3": "Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur."
-    },
-    "desc": "Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-  },
-
-  "why": {
-    "kicker": "क्यों",
-    "title": "हमारा रेस्टोरेंट क्यों चुनें",
-    "cards": {
-      "1": { "title": "Lorem Ipsum", "desc": "Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat" },
-      "2": { "title": "Repellat Nihil", "desc": "Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest" },
-      "3": { "title": "Ad ad velit qui", "desc": "Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis" }
-    }
-  },
+  
 
   "menu": {
     "kicker": "मेनू",
@@ -88,10 +33,13 @@
       "live_desserts": { "name": "Live Desserts", "desc": "Desserts prepared live in front of you" },
       "mozzarella": { "name": "Mozzarella Stick", "desc": "Lorem, deren, trataro, filede, nerada" },
       
-      "imported": { "name": "Imported", "desc": "Imported ingredients in fresh preparations" },
-      "fruit_shakes": { "name": "Fruit Shakes", "desc": "Refreshing fruit-based shakes" },
-      "mojito": { "name": "Mojito", "desc": "Classic mojito with fresh mint and lime" },
-      "fruit_juice": { "name": "Fruit Juice", "desc": "Freshly squeezed fruit juices" },
+      "indian_greens": { "name": "Indian Greens", "desc": "Fresh Indian green vegetables in nutritious preparations" },
+      "exotic_vegetable": { "name": "Exotic Vegetable", "desc": "Rare and exotic vegetables prepared with care" },
+      "continental_salad_bar": { "name": "Continental Salad Bar", "desc": "Variety of continental salads with fresh ingredients" },
+      "assortments_of_raitas": { "name": "Assortments of Raitas", "desc": "Various yogurt-based raitas with different flavors" },
+      "indian_soups": { "name": "Indian Soups", "desc": "Traditional Indian soups with authentic spices" },
+      "thai_soups": { "name": "Thai Soups", "desc": "Aromatic Thai soups with lemongrass and spices" },
+      "chinese_soups": { "name": "Chinese Soups", "desc": "Hearty Chinese soups with noodles and vegetables" },
       "greek_salad": { "name": "Greek Salad", "desc": "Fresh spinach, crisp romaine, tomatoes, and Greek olives" },
       "spinach_salad": { "name": "Spinach Salad", "desc": "Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette" },
       "tomato_basil_shorba": { "name": "Tomato Basil Shorba", "desc": "Aromatic tomato soup with fresh basil" },
@@ -102,217 +50,49 @@
       "green_leaves": { "name": "Green Leaves", "desc": "Nutritious soups made with fresh green vegetables" },
       "add_ons": { "name": "Add Ons", "desc": "Additional ingredients to enhance your soup" },
       "continental": { "name": "Continental", "desc": "European-style soups with refined tastes" },
+      "modern_indian": { "name": "Modern Indian", "desc": "Contemporary Indian soups with innovative twists" },
+      "european_classics": { "name": "European Classics", "desc": "Traditional European soups with classic recipes" },
+      "western_comfort": { "name": "Western Comfort", "desc": "Hearty Western soups for comfort and warmth" },
+      "authentic_thai": { "name": "Authentic Thai", "desc": "Traditional Thai soups with authentic spices" },
+      "ching_chinese": { "name": "Ching Chinese", "desc": "Chinese soups with Ching flavors" },
+      "afghani_delights": { "name": "Afghani Delights", "desc": "Delicious Afghan soups with unique flavors" },
       "lobster_roll": { "name": "Lobster Roll", "desc": "Plump lobster meat, mayo and crisp lettuce on a toasted bulky roll" },
       "tawa_paratha_live": { "name": "Tawa Paratha Live", "desc": "Freshly cooked paratha on tawa with live preparation" },
-      "breads": { "name": "Breads", "desc": "Assortment of freshly baked breads" },
-      "rice": { "name": "Rice", "desc": "Aromatic and flavorful rice dishes" },
+      "tawa_fulka_roti": { "name": "Tawa Fulka (Roti)", "desc": "Soft and fluffy roti cooked on tawa" },
+      "tandoori_breads": { "name": "Tandoori Breads", "desc": "Breads baked in tandoor with smoky flavor" },
+      "live_parathas": { "name": "Live Parathas", "desc": "Parathas prepared live with fresh ingredients" },
+      "steamed_rice": { "name": "Steamed Rice", "desc": "Lightly steamed rice with natural aroma" },
+      "biryanis": { "name": "Biryanis", "desc": "Fragrant rice dishes with spices and meat or vegetables" },
+      "sweet_rice": { "name": "Sweet Rice", "desc": "Rice cooked with sweet ingredients and flavors" },
       "dimsum": { "name": "Dimsum", "desc": "Steamed dumplings filled with savory meats and vegetables" },
       "sushi": { "name": "Sushi", "desc": "Fresh sushi rolls with rice, seaweed, and assorted fillings" },
       "pizza": { "name": "Pizza", "desc": "Wood-fired pizza with fresh toppings and melted cheese" },
       "avocado_bar": { "name": "Avocado Bar", "desc": "Fresh avocado preparations with various seasonings and accompaniments" },
       "shawarma": { "name": "Shawarma", "desc": "Marinated meat slowly roasted and served with pita and sauces" },
       "pasta": { "name": "Pasta", "desc": "Homemade pasta with rich sauces and fresh ingredients" },
-      "delhi_chaat": { "name": "Delhi Chaat", "desc": "Traditional Delhi street food with tangy and spicy flavors" },
-      "kolkata_chaat": { "name": "Kolkata Chaat", "desc": "Bengali style chaat with unique spices and ingredients" },
-      "fusion_chaat": { "name": "Fusion Chaat", "desc": "Creative blend of Indian and international flavors" },
-      "continental_chaat": { "name": "Continental Chaat", "desc": "Western-inspired chaat with a modern twist" },
-      "health_conscious_chaat": { "name": "Health Conscious Chaat", "desc": "Nutritious chaat made with healthy ingredients" },
-      "millet_chaat": { "name": "Millet Chaat", "desc": "Wholesome chaat prepared with millets and fresh veggies" },
-      "idli_dosa": { "name": "इडली और डोसा", "desc": "उपमा और चटनी के साथ भाप से पकाए गए चावल के केक और कुरकुरी किण्वित क्रेप" },
-      "vada": { "name": "वड़ा", "desc": "नारियल चटनी और सांबर के साथ कुरकुरी दाल के फ्रिटर" },
-      "sambar": { "name": "सांबर", "desc": "तेज पत्तेदार दाल स्टू जिसमें सब्जियां और सुगंधित मसाले" },
-      "rasam": { "name": "रसम", "desc": "तेज पत्तेदार दक्षिण भारतीय सूप जिसमें इमली और काली मिर्च" }
+      "teppanyaki": { "name": "Teppanyaki", "desc": "Japanese style grilled dishes cooked on a flat iron griddle" },
+      "burrata": { "name": "Burrata", "desc": "Creamy Italian cheese with fresh mozzarella and cream filling" },
+      "bao": { "name": "Bao", "desc": "Steamed buns filled with delicious meats and vegetables" },
+      "oriental_bowl": { "name": "Oriantal Bowl", "desc": "Healthy bowl with oriental flavors and fresh ingredients" },
+      "delhi_chaat": { "name": "Delhi Special", "desc": "Traditional Delhi street food with tangy and spicy flavors" },
+      "kolkata_chaat": { "name": "UP Special", "desc": "Bengali style chaat with unique spices and ingredients" },
+      "fusion_chaat": { "name": "Bespoke Special", "desc": "Creative blend of Indian and international flavors" },
+      "continental_chaat": { "name": "Millet Special", "desc": "Western-inspired chaat with a modern twist" },
+      "health_conscious_chaat": { "name": "Western Style", "desc": "Nutritious chaat made with healthy ingredients" },
+      "millet_chaat": { "name": "Fusion Style", "desc": "Wholesome chaat prepared with millets and fresh veggies" },
+      "desi_style": { "name": "Desi Style", "desc": "Authentic Indian chaat with traditional flavors" },
+      "regular_chaats": { "name": "Regular Chaats", "desc": "Classic chaat varieties for everyday enjoyment" },
+      "malabari_paratha": { "name": "Malabari Paratha", "desc": "Flaky paratha from Malabar region with rich flavors" },
+      "vegetable_stew": { "name": "Vegetable Stew", "desc": "Hearty stew with mixed vegetables and coconut milk" },
+      "appam": { "name": "Appam", "desc": "Fermented rice pancakes with crispy edges" },
+      "masala_plain_dosa": { "name": "Masala and Plain Dosa", "desc": "Crispy crepes filled with potato masala or plain" },
+      "idli_dosa": { "name": "Idli Dosa", "desc": "Steamed rice cakes and crispy fermented crepes" },
+      "sambar": { "name": "Sambar", "desc": "Tangy lentil stew with vegetables and aromatic spices" },
+      "thakkali_sadam": { "name": "Thakkali Sadam", "desc": "Tomato rice with South Indian spices" },
+      "andhra_bhindi_masala": { "name": "Andhra Bhindi Masala", "desc": "Spicy okra curry from Andhra Pradesh" }
     }
-  },
-
-  "specials": {
-    "kicker": "विशेष",
-    "title": "हमारे विशेष आइटम देखें",
-    "tabs": {
-      "1": "Modi sit est",
-      "2": "Unde praesentium sed",
-      "3": "Pariatur explicabo vel",
-      "4": "Nostrum qui quasi",
-      "5": "Iusto ut expedita aut"
-    },
-    "items": {
-      "1": {
-        "title": "Architecto ut aperiam autem id",
-        "italic": "Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka",
-        "desc": "Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero"
-      },
-      "2": {
-        "title": "Et blanditiis nemo veritatis excepturi",
-        "italic": "Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka",
-        "desc": "Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal"
-      },
-      "3": {
-        "title": "Impedit facilis occaecati odio neque aperiam sit",
-        "italic": "Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis aut",
-        "desc": "Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste odio. Earum odit aut quod. Eum non fuga consequatur quasi aut. Suscipit fugiat sit ullam. Soluta et harum voluptatem optio quae"
-      },
-      "4": {
-        "title": "Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore",
-        "italic": "Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus",
-        "desc": "Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum inventore"
-      },
-      "5": {
-        "title": "Est eveniet ipsam sindera pad rone matrelat sando reda",
-        "italic": "Omnis blanditiis saepe eos autem qui sunt debitis porro quia.",
-        "desc": "Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel"
-      }
-    }
-  },
-
-  "events": {
-    "items": {
-      "birthday": {
-        "title": "Birthday Parties",
-        "italic": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "bullets": {
-          "1": "Ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-          "2": "Duis aute irure dolor in reprehenderit in voluptate velit.",
-          "3": "Ullamco laboris nisi ut aliquip ex ea commodo consequat."
-        },
-        "desc": "Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur"
-      },
-      "private": {
-        "title": "Private Parties",
-        "italic": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "bullets": {
-          "1": "Ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-          "2": "Duis aute irure dolor in reprehenderit in voluptate velit.",
-          "3": "Ullamco laboris nisi ut aliquip ex ea commodo consequat."
-        },
-        "desc": "Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur"
-      },
-      "custom": {
-        "title": "Custom Parties",
-        "italic": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "bullets": {
-          "1": "Ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-          "2": "Duis aute irure dolor in reprehenderit in voluptate velit.",
-          "3": "Ullamco laboris nisi ut aliquip ex ea commodo consequat."
-        },
-        "desc": "Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur"
-      }
-    }
-  },
-
-  "book": {
-    "kicker": "आरक्षण",
-    "title": "टेबल बुक करें",
-    "form": {
-      "name": "आपका नाम",
-      "email": "आपका ईमेल",
-      "phone": "आपका फ़ोन",
-      "date": "तारीख",
-      "time": "समय",
-      "people": "लोगों की संख्या",
-      "message": "संदेश",
-      "loading": "लोड हो रहा है",
-      "success": "आपका बुकिंग अनुरोध भेज दिया गया है। हम पुष्टि के लिए कॉल या ईमेल करेंगे। धन्यवाद!",
-      "submit": "टेबल बुक करें"
-    }
-  },
-
-  "testimonials": {
-    "kicker": "प्रशंसापत्र",
-    "title": "लोग हमारे बारे में क्या कहते हैं",
-    "items": {
-      "saul": {
-        "name": "Saul Goodman",
-        "role": "Ceo & Founder",
-        "quote": "Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper."
-      },
-      "sara": {
-        "name": "Sara Wilsson",
-        "role": "Designer",
-        "quote": "Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa."
-      },
-      "jena": {
-        "name": "Jena Karlis",
-        "role": "Store Owner",
-        "quote": "Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim."
-      },
-      "matt": {
-        "name": "Matt Brandon",
-        "role": "Freelancer",
-        "quote": "Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam."
-      },
-      "john": {
-        "name": "John Larson",
-        "role": "Entrepreneur",
-        "quote": "Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid."
-      }
-    }
-  },
-
-  "gallery": {
-    "kicker": "गैलरी",
-    "title": "हमारे रेस्टोरेंट की कुछ तस्वीरें",
-    "open": "तस्वीर खोलें"
-  },
-
-  "chefs": {
-    "kicker": "टीम",
-    "title": "Necessitatibus eius consequatur",
-    "items": {
-      "walter": { "name": "Walter White", "role": "Master Chef" },
-      "sarah": { "name": "Sarah Jhonson", "role": "Patissier" },
-      "william": { "name": "William Anderson", "role": "Cook" }
-    }
-  },
-
-  "contact": {
-    "kicker": "संपर्क",
-    "title": "संपर्क करें",
-    "locationTitle": "स्थान",
-    "locationValue": "A108 Adam Street, New York, NY 535022",
-    "hoursTitle": "खुलने का समय",
-    "hoursLine1": "सोमवार-शनिवार:",
-    "hoursLine2": "11:00 AM - 2300 PM",
-    "emailTitle": "ईमेल",
-    "callTitle": "कॉल",
-    "form": {
-      "name": "आपका नाम",
-      "email": "आपका ईमेल",
-      "subject": "विषय",
-      "message": "संदेश",
-      "loading": "लोड हो रहा है",
-      "success": "आपका संदेश भेज दिया गया है। धन्यवाद!",
-      "submit": "संदेश भेजें"
-    }
-  },
-
-  "footer": {
-    "addressLine1": "A108 Adam Street",
-    "addressLine2": "New York, NY 535022",
-    "phoneLabel": "फ़ोन:",
-    "emailLabel": "ईमेल:",
-    "usefulLinks": "उपयोगी लिंक",
-    "servicesTitle": "हमारी सेवाएँ",
-    "service1": "Web Design",
-    "service2": "Web Development",
-    "service3": "Product Management",
-    "service4": "Marketing",
-    "service5": "Graphic Design",
-    "newsletterTitle": "न्यूज़लेटर",
-    "newsletterDesc": "सब्सक्राइब करें और नवीनतम अपडेट पाएं! (डेमो)",
-    "newsletterPlaceholder": "ईमेल पता",
-    "newsletterSuccess": "सब्सक्राइब हो गया (डेमो)।",
-    "subscribe": "सब्सक्राइब",
-    "copyright": "कॉपीराइट",
-    "rights": "सर्वाधिकार सुरक्षित",
-    "credits": "Designed by BootstrapMade",
-    "starterPage": "स्टार्टर पेज"
-  },
-
-  "starter": {
-    "pageTitle": "Starter Page",
-    "pageDesc": "Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias.",
-    "sectionKicker": "Starter Section",
-    "sectionTitle": "Starter Section",
-    "sectionBody": "Use this page as a starter for your own custom pages."
   }
+
+
+
 }

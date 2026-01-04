@@ -14,13 +14,13 @@
   },
   "hero": {
     "welcome": "Welcome to",
-    "subtitle": "SIGNATURE BITES, UNFORGETTABLE NIGHT'S",
+    "subtitle": "SIGNATURE BITES, UNFORGETTABLE NIGHTS",
     "ctaMenu": "Our Menu",
     "ctaBook": "Book a Table",
     "playVideo": "Play Video"
   },
   "about": {
-    "title": "SIGNATURE BITES, UNFORGETTABLE NIGHT'S",
+    "title": "SIGNATURE BITES, UNFORGETTABLE NIGHTS",
     "italic": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "bullets": {
       "1": "Ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -114,8 +114,12 @@
         "desc": "Traditional Bihari cuisine with distinctive spices"
       },
       "punjabi_special": {
-        "name": "Punjabi Special",
+        "name": "Punjabi ",
         "desc": "Rich and flavorful Punjabi dishes"
+      },
+      "live_live_tawas": {
+        "name": " Live Tawas",
+        "desc": "Freshly prepared live tawa-style Punjabi dishes with authentic spices"
       },
       "tuscan_grilled": {
         "name": "Tuscan Grilled",
@@ -149,21 +153,33 @@
         "name": "Mozzarella Stick",
         "desc": "Lorem, deren, trataro, filede, nerada"
       },
-      "imported": {
-        "name": "Imported",
-        "desc": "Imported ingredients in fresh preparations"
+      "indian_greens": {
+        "name": "Indian Greens",
+        "desc": "Fresh Indian green vegetables in nutritious preparations"
       },
-      "fruit_shakes": {
-        "name": "Fruit Shakes",
-        "desc": "Refreshing fruit-based shakes"
+      "exotic_vegetable": {
+        "name": "Exotic Vegetable",
+        "desc": "Rare and exotic vegetables prepared with care"
       },
-      "mojito": {
-        "name": "Mojito",
-        "desc": "Classic mojito with fresh mint and lime"
+      "continental_salad_bar": {
+        "name": "Continental Salad Bar",
+        "desc": "Variety of continental salads with fresh ingredients"
       },
-      "fruit_juice": {
-        "name": "Fruit Juice",
-        "desc": "Freshly squeezed fruit juices"
+      "assortments_of_raitas": {
+        "name": "Assortments of Raitas",
+        "desc": "Various yogurt-based raitas with different flavors"
+      },
+      "indian_soups": {
+        "name": "Indian Soups",
+        "desc": "Traditional Indian soups with authentic spices"
+      },
+      "thai_soups": {
+        "name": "Thai Soups",
+        "desc": "Aromatic Thai soups with lemongrass and spices"
+      },
+      "chinese_soups": {
+        "name": "Chinese Soups",
+        "desc": "Hearty Chinese soups with noodles and vegetables"
       },
       "greek_salad": {
         "name": "Greek Salad",
@@ -173,37 +189,34 @@
         "name": "Spinach Salad",
         "desc": "Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette"
       },
-      "tomato_basil_shorba": {
-        "name": "Tomato Basil Shorba",
-        "desc": "Aromatic tomato soup with fresh basil"
-      },
-      "lemon_coriander_soup": {
-        "name": "Lemon Coriander Soup",
-        "desc": "Refreshing soup with lemon and coriander flavors"
-      },
-      "khou_suey": {
-        "name": "Khou Suey",
-        "desc": "Burmese coconut curry noodle soup"
-      },
-      "veg_manchow_soup": {
-        "name": "Veg Manchow Soup",
-        "desc": "Spicy vegetable soup with noodles and mushrooms"
-      },
-      "indian": {
-        "name": "Indian",
-        "desc": "Traditional Indian soups with authentic flavors"
-      },
-      "green_leaves": {
-        "name": "Green Leaves",
-        "desc": "Nutritious soups made with fresh green vegetables"
-      },
-      "add_ons": {
-        "name": "Add Ons",
-        "desc": "Additional ingredients to enhance your soup"
-      },
+      
       "continental": {
         "name": "Continental",
         "desc": "European-style soups with refined tastes"
+      },
+      "modern_indian": {
+        "name": "Modern Indian",
+        "desc": "Contemporary Indian soups with innovative twists"
+      },
+      "european_classics": {
+        "name": "European Classics",
+        "desc": "Traditional European soups with classic recipes"
+      },
+      "western_comfort": {
+        "name": "Western Comfort",
+        "desc": "Hearty Western soups for comfort and warmth"
+      },
+      "authentic_thai": {
+        "name": "Authentic Thai",
+        "desc": "Traditional Thai soups with authentic spices"
+      },
+      "ching_chinese": {
+        "name": "Ching Chinese",
+        "desc": "Chinese soups with Ching flavors"
+      },
+      "afghani_delights": {
+        "name": "Afghani Delights",
+        "desc": "Delicious Afghan soups with unique flavors"
       },
       "lobster_roll": {
         "name": "Pasta",
@@ -213,13 +226,29 @@
         "name": "Tawa Paratha Live",
         "desc": "Freshly cooked paratha on tawa with live preparation"
       },
-      "breads": {
-        "name": "Breads",
-        "desc": "Assortment of freshly baked breads"
+      "tawa_fulka_roti": {
+        "name": "Tawa Fulka (Roti)",
+        "desc": "Soft and fluffy roti cooked on tawa"
       },
-      "rice": {
-        "name": "Rice",
-        "desc": "Aromatic and flavorful rice dishes"
+      "tandoori_breads": {
+        "name": "Tandoori Breads",
+        "desc": "Breads baked in tandoor with smoky flavor"
+      },
+      "live_parathas": {
+        "name": "Live Parathas",
+        "desc": "Parathas prepared live with fresh ingredients"
+      },
+      "steamed_rice": {
+        "name": "Steamed Rice",
+        "desc": "Lightly steamed rice with natural aroma"
+      },
+      "biryanis": {
+        "name": "Biryanis",
+        "desc": "Fragrant rice dishes with spices and meat or vegetables"
+      },
+      "sweet_rice": {
+        "name": "Sweet Rice",
+        "desc": "Rice cooked with sweet ingredients and flavors"
       },
       "dimsum": {
         "name": "Dimsum",
@@ -245,47 +274,86 @@
         "name": "Pasta",
         "desc": "Homemade pasta with rich sauces and fresh ingredients"
       },
+      "teppanyaki": {
+        "name": "Teppanyaki",
+        "desc": "Japanese style grilled dishes cooked on a flat iron griddle"
+      },
+      "burrata": {
+        "name": "Burrata",
+        "desc": "Creamy Italian cheese with fresh mozzarella and cream filling"
+      },
+      "bao": {
+        "name": "Bao",
+        "desc": "Steamed buns filled with delicious meats and vegetables"
+      },
+      "oriental_bowl": {
+        "name": "Oriantal Bowl",
+        "desc": "Healthy bowl with oriental flavors and fresh ingredients"
+      },
       "delhi_chaat": {
-        "name": "Delhi Chaat",
+        "name": "Delhi Special",
         "desc": "Traditional Delhi street food with tangy and spicy flavors"
       },
       "kolkata_chaat": {
-        "name": "Kolkata Chaat",
+        "name": "UP Special",
         "desc": "Bengali style chaat with unique spices and ingredients"
       },
       "fusion_chaat": {
-        "name": "Fusion Chaat",
+        "name": "Bespoke Special",
         "desc": "Creative blend of Indian and international flavors"
       },
       "continental_chaat": {
-        "name": "Continental Chaat",
+        "name": "Millet Special",
         "desc": "Western-inspired chaat with a modern twist"
       },
       "health_conscious_chaat": {
-        "name": "Health Conscious Chaat",
+        "name": "Western Style",
         "desc": "Nutritious chaat made with healthy ingredients"
       },
       "millet_chaat": {
-        "name": "Millet Chaat",
+        "name": "Fusion Style",
         "desc": "Wholesome chaat prepared with millets and fresh veggies"
       },
-      "idli_dosa": {
-        "name": "Idli & Dosa",
-        "desc": "Steamed rice cakes and crispy fermented crepes served with chutneys"
+      "desi_style": {
+        "name": "Desi Style",
+        "desc": "Authentic Indian chaat with traditional flavors"
       },
-      "vada": {
-        "name": "Vada",
-        "desc": "Crispy lentil fritters served with coconut chutney and sambar"
+      "regular_chaats": {
+        "name": "Regular Chaats",
+        "desc": "Classic chaat varieties for everyday enjoyment"
+      },
+      "malabari_paratha": {
+        "name": "Malabari Paratha",
+        "desc": "Flaky paratha from Malabar region with rich flavors"
+      },
+      "vegetable_stew": {
+        "name": "Vegetable Stew",
+        "desc": "Hearty stew with mixed vegetables and coconut milk"
+      },
+      "appam": {
+        "name": "Appam",
+        "desc": "Fermented rice pancakes with crispy edges"
+      },
+      "masala_plain_dosa": {
+        "name": "Masala and Plain Dosa",
+        "desc": "Crispy crepes filled with potato masala or plain"
+      },
+      "idli_dosa": {
+        "name": "Idli Dosa",
+        "desc": "Steamed rice cakes and crispy fermented crepes"
       },
       "sambar": {
         "name": "Sambar",
         "desc": "Tangy lentil stew with vegetables and aromatic spices"
       },
-      "rasam": {
-        "name": "Rasam",
-        "desc": "Spicy South Indian soup made with tamarind and pepper"
+      "thakkali_sadam": {
+        "name": "Thakkali Sadam",
+        "desc": "Tomato rice with South Indian spices"
+      },
+      "andhra_bhindi_masala": {
+        "name": "Andhra Bhindi Masala",
+        "desc": "Spicy okra curry from Andhra Pradesh"
       }
-      
     }
   },
   "specials": {

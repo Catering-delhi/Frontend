@@ -69,11 +69,7 @@ h4,
 h5,
 h6 {
   color: var(--heading-color);
-  font-family: var(--heading-font);
 }
-
-/* PHP Email Form Messages
-------------------------------*/
 .php-email-form .error-message {
   display: none;
   background: #df1529;

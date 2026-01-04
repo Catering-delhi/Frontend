@@ -11,8 +11,8 @@ export default function GalleryPage() {
   return (
     <>
       <PageTitle 
-        title={t("gallery.title")} 
-        description={t("gallery.kicker")}
+        title={t(" Gallery")} 
+        description={t("gallery")}
         breadcrumbLabel={t("nav.gallery")} 
       />
       <Gallery />

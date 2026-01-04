@@ -45,35 +45,8 @@ export default function Header() {
   }, []);
 
   return (
-    <header id="header" className="header fixed-top">
-      <div className="topbar d-flex align-items-center">
-        <div className="container d-flex justify-content-center justify-content-md-between">
-
-          <div className="languages d-none d-md-flex align-items-center">
-            <ul>
-              {/* <li>
-                <button
-                  type="button"
-                  onClick={() => setLocale("en")}
-                  style={{ background: "transparent", border: 0, padding: 0, color: "inherit" }}
-                >
-                  {locale === "en" ? <strong>EN</strong> : "EN"}
-                </button>
-              </li> */}
-              {/* <li style={{ textAlign: "left" }}>
-                <button
-                  type="button"
-                  onClick={() => setLocale("hi")}
-                  style={{ background: "transparent", border: 0, padding: 0, color: "inherit" }}
-                >
-                  {locale === "hi" ? <strong>HI</strong> : "HI"}
-                </button>
-              </li> */}
-              
-            </ul>
-          </div>
-        </div>
-      </div>
+    <header id="header" className="header fixed-top" style={{ height: "100px" }}>
+      
 
       <div className="branding d-flex align-items-cente">
         <div className="container position-relative d-flex align-items-center justify-content-between">
@@ -82,7 +55,7 @@ export default function Header() {
               src="/assets/img/logo2.png"
               className="logo-img"
               alt={`${t("site.name")} logo`}
-              style={{ maxWidth: "50px", maxHeight: "50px", width: "auto", height: "auto" }}
+              style={{ maxWidth: "100px", maxHeight: "100px", width: "auto", height: "auto" }}
             />
             <h1 className="sitename visually-hidden">{t("site.name")}</h1>
           </Link>

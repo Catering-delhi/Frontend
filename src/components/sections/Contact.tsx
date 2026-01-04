@@ -125,7 +125,7 @@ export default function Contact() {
                           <a
                             className="text-reset"
                             href={`tel:${t("topbar.phone")}`}
-                            style={{ textDecoration: "none", fontSize: 18 }}
+                            // style={{ textDecoration: "none", fontSize: 18 }}
                           >
                             {t("+91-8595572638")}
                           </a>
@@ -165,7 +165,7 @@ export default function Contact() {
                             href={`mailto:${t("topbar.email")}`}
                             style={{ textDecoration: "none", fontSize: 18 }}
                           >
-                            {t("bespokecuisineinc@gmail.com.email")}
+                            {t("bespokecuisineinc@gmail.com")}
                           </a>
                         </p>
                       </div>

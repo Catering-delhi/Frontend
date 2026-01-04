@@ -24,14 +24,14 @@ export default function Footer() {
                 <span className="sitename visually-hidden">{t("site.name")}</span>
               </Link>
               <div>
-                <div className="footer-contact" style={{ fontSize: "1.1rem" }}>
+                <div className="footer-contact">
                   <p>{t("footer.addressLine1")}</p>
                   <p>{t("footer.addressLine2")}</p>
                   <p className="mt-3">
-                    <strong>{t("footer.phoneLabel")}</strong> <span>{t("+91-8595572638")}</span>
+                    {t("footer.phoneLabel")}: <span>{t("+91-8595572638")}</span>
                   </p>
                   <p>
-                    <strong>{t("footer.emailLabel")}</strong> <span>{t("bespokecuisineinc@gmail.com.email")}</span>
+                    {t("footer.emailLabel")}: <span>{t("bespokecuisineinc@gmail.com")}</span>
                   </p>
                 </div>
                 <div className="social-links d-flex mt-4">

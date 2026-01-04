@@ -33,36 +33,15 @@ export default function Hero() {
                 <Link className="cta-btn" href="/menu">
                   {t("hero.ctaMenu")}
                 </Link>
-                <Link className="cta-btn" href="/book-a-table">
-                  {t("hero.ctaBook")}
-                </Link>
               </div>
             </Reveal>
           </div>
 
-          <div className="col-lg-4 d-flex align-items-center justify-content-center mt-5 mt-lg-0">
-            <button
-              type="button"
-              className="glightbox pulsating-play-btn"
-              aria-label={t("hero.playVideo")}
-              onClick={() => setVideoOpen(true)}
-              style={{ border: 0, background: "transparent" }}
-            />
-          </div>
+          
         </div>
       </div>
 
-      <Modal open={videoOpen} onClose={() => setVideoOpen(false)} title={t("hero.playVideo")}>
-        <div style={{ position: "relative", paddingTop: "56.25%" }}>
-          <iframe
-            title="Video"
-            src="https://www.youtube.com/embed/Y7f98aduVJ8?autoplay=1"
-            allow="autoplay; encrypted-media"
-            allowFullScreen
-            style={{ position: "absolute", inset: 0, width: "100%", height: "100%", border: 0 }}
-          />
-        </div>
-      </Modal>
+      
     </section>
   );
 }
