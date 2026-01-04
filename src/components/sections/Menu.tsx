@@ -116,7 +116,7 @@ export default function Menu() {
                       className="img-fluid w-100"
                       style={{ height: "250px", objectFit: "cover" }}
                       onError={(e) => {
-                        // Fallback to menu images if order images don't exist
+                        
                         const target = e.target as HTMLImageElement;
                         const menuImages = [
                           "/assets/img/menu/bread-barrel.jpg",

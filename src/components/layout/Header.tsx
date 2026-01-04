@@ -45,7 +45,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header id="header" className="header fixed-top" style={{ height: "100px" }}>
+    <header id="header" className="header fixed-top" style={{ height: "500px" }}>
       
 
       <div className="branding d-flex align-items-cente">
@@ -55,7 +55,7 @@ export default function Header() {
               src="/assets/img/logo2.png"
               className="logo-img"
               alt={`${t("site.name")} logo`}
-              style={{ maxWidth: "100px", maxHeight: "100px", width: "auto", height: "auto" }}
+              style={{ maxWidth: "80px", maxHeight: "80px", width: "auto", height: "auto" }}
             />
             <h1 className="sitename visually-hidden">{t("site.name")}</h1>
           </Link>

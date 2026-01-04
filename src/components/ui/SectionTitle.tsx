@@ -1,4 +1,4 @@
-// src/components/ui/SectionTitle.tsx
+
 "use client";
 
 import React from "react";
