@@ -115,6 +115,7 @@ export default function Menu() {
                       alt={order.title}
                       className="img-fluid w-100"
                       style={{ height: "250px", objectFit: "cover" }}
+                      loading="lazy"
                       onError={(e) => {
                         
                         const target = e.target as HTMLImageElement;
@@ -162,6 +163,7 @@ export default function Menu() {
                   alt={t(item.nameKey)}
                   className="img-fluid me-3"
                   style={{ width: "80px", height: "80px", objectFit: "cover" }}
+                  loading="lazy"
                 />
                 <div>
                   <h5>{t(item.nameKey)}</h5>

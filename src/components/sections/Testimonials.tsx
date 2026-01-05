@@ -27,22 +27,37 @@ export default function Testimonials() {
             loop
             speed={600}
             autoplay={{ delay: 5000, disableOnInteraction: false }}
-            slidesPerView={"auto"}
+            slidesPerView={2}
             pagination={{ clickable: true }}
             modules={[Pagination, Autoplay]}
             className="swiper"
+            breakpoints={{
+              992: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+              },
+            }}
           >
             {testimonials.map((x) => (
               <SwiperSlide key={x.id}>
                 <div className="testimonial-item">
-                  <p>
-                    <i className="bi bi-quote quote-icon-left" />
-                    <span>{t(x.quoteKey)}</span>
-                    <i className="bi bi-quote quote-icon-right" />
-                  </p>
-                  <img src={x.image} className="testimonial-img" alt="" />
-                  <h3>{t(x.nameKey)}</h3>
-                  <h4>{t(x.roleKey)}</h4>
+                  <div className="d-flex align-items-center">
+                    <img
+                      src={x.image}
+                      className="testimonial-img flex-shrink-0"
+                      alt=""
+                      style={{ width: "100px", height: "100px", objectFit: "cover", borderRadius: "50%", marginRight: "20px" }}
+                    />
+                    <div className="text-start">
+                      <p>
+                        <i className="bi bi-quote quote-icon-left" />
+                        <span>{t(x.quoteKey)}</span>
+                        <i className="bi bi-quote quote-icon-right" />
+                      </p>
+                      <h3><b>{t(x.nameKey)}</b></h3>
+                      <h4>{t(x.roleKey)}</h4>
+                    </div>
+                  </div>
                 </div>
               </SwiperSlide>
             ))}

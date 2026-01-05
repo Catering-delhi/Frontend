@@ -341,4 +341,77 @@ footer .logo-img {
   }
 }
 
+/* GRID */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 18px;
+  padding: 0 40px 80px;
+}
+
+/* ITEM */
+.gallery-item {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;     
+  display: block;        
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.06);
+}
+.gallery-tabs {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 40px auto 60px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.gallery-tab {
+  background: none;
+  border: none;
+  color: #aaa;
+  padding: 12px 0;
+  font-size: 15px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.gallery-tab.active {
+  color: #d9b35a;
+}
+
+.tab-indicator {
+  position: absolute;
+  bottom: -1px;
+  height: 2px;
+  background: #d9b35a;
+  transition: left 0.35s ease, width 0.35s ease;
+}
+.fade {
+  animation: fadeSlide 0.35s ease;
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 /* If your template CSS expects body classes from JS, we'll toggle them in Header */

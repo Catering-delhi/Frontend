@@ -45,7 +45,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header id="header" className="header fixed-top" style={{ height: "500px" }}>
+    <header id="header" className="header fixed-top">
       
 
       <div className="branding d-flex align-items-cente">
