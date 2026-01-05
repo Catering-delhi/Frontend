@@ -123,7 +123,7 @@ export const menuItems: MenuItem[] = [
   {
     id: "traditional_indian",
     category: "desserts",
-    image: "/assets/img/menu/bread-barrel.jpg",
+    image: "/assets/img/menu/Dessert/Traditional Indian.jpg",
     price: "$8.95",
     nameKey: "menu.items.traditional_indian.name",
     descKey: "menu.items.traditional_indian.desc",

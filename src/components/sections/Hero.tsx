@@ -13,7 +13,7 @@ export default function Hero() {
 
   return (
     <section id="hero" className="hero section dark-background">
-      <img src="/assets/img/hero-bg.jpg" alt="" />
+      <img src="/assets/img/hero-bg.JPG" alt="" />
 
       <div className="container">
         <div className="row">

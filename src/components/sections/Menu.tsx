@@ -121,7 +121,7 @@ export default function Menu() {
                         const menuImages = [
                           "/assets/img/menu/bread-barrel.jpg",
                           "/assets/img/menu/caesar.jpg",
-                          "/assets/img/menu/greek-salad.jpg",
+                          "/assets/img/menu/greek-salad.JPG",
                           "/assets/img/menu/lobster-bisque.jpg",
                           "/assets/img/menu/lobster-roll.jpg",
                           "/assets/img/menu/mozzarella.jpg",
