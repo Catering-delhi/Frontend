@@ -138,7 +138,7 @@ export default function Services() {
       }}
     >
       {/* Image */}
-      <div className="col-lg-6 order-1 order-lg-2 text-center">
+      <div className="col-lg-6 order-2 order-lg-1 content">
         <Reveal>
           <img
             src="/assets/img/aboutus1.webp"
@@ -168,10 +168,10 @@ export default function Services() {
           />
         </Reveal>
       </div>
-
+{/* col-lg-6 order-1 order-lg-2 text-center */}
       {/* Content */}
       <div
-        className="col-lg-6 order-2 order-lg-1 content"
+        className="col-lg-6 order-1 order-lg-2 text-center"
         style={{ padding: "20px 30px" }}
       >
         <Reveal>

@@ -17,7 +17,7 @@ export default function Hero() {
 
       <div className="container">
         <div className="row">
-          <div className="col-lg-8 d-flex flex-column align-items-center align-items-lg-start">
+          <div className="col-lg-8 d-flex flex-column align-items-start">
             <Reveal delay={0.05}>
               <h2>
                 {t("hero.welcome")} <span>{t("site.name")}</span>
