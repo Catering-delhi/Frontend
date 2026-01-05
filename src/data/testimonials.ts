@@ -17,9 +17,9 @@ export const testimonials: Testimonial[] = [
   },
   {
     id: "sara",
-    nameKey: "testimonials.items.sara.name",
-    roleKey: "testimonials.items.sara.role",
-    quoteKey: "testimonials.items.sara.quote",
+    nameKey: "Lala Yadav",
+    roleKey: "Gynocoligist",
+    quoteKey: "Lorem ipsum dolor sit amet, con ad minim veniam, quis nostrud",
     image: "/assets/img/testimonials/testimonials-2.jpg",
   },
   {

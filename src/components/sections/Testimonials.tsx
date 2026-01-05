@@ -16,23 +16,26 @@ export default function Testimonials() {
   const { t } = useTranslation("common");
 
   return (
-    <section id="testimonials" className="testimonials section dark-background">
-      <img src="/assets/img/testimonials-bg.jpg" className="testimonials-bg" alt="" />
-
-      <SectionTitle kicker={t("testimonials.kicker")} title={t("testimonials.title")} />
-
+    <section id="testimonials" className="testimonials-section">
       <div className="container">
+        <SectionTitle kicker={t("What our customers say about us")} title={t("Testimonials")} />
+
         <Reveal>
           <Swiper
             loop
             speed={600}
             autoplay={{ delay: 5000, disableOnInteraction: false }}
-            slidesPerView={2}
+            slidesPerView={1}
+            spaceBetween={20}
             pagination={{ clickable: true }}
             modules={[Pagination, Autoplay]}
-            className="swiper"
+            className="testimonials-swiper"
             breakpoints={{
-              992: {
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+              },
+              1024: {
                 slidesPerView: 2,
                 spaceBetween: 40,
               },
@@ -40,22 +43,21 @@ export default function Testimonials() {
           >
             {testimonials.map((x) => (
               <SwiperSlide key={x.id}>
-                <div className="testimonial-item">
-                  <div className="d-flex align-items-center">
+                <div className="testimonial-card">
+                  <div className="testimonial-content">
                     <img
                       src={x.image}
-                      className="testimonial-img flex-shrink-0"
-                      alt=""
-                      style={{ width: "100px", height: "100px", objectFit: "cover", borderRadius: "50%", marginRight: "20px" }}
+                      alt={`${t(x.nameKey)}, ${t(x.roleKey)}`}
+                      className="testimonial-avatar"
                     />
-                    <div className="text-start">
-                      <p>
-                        <i className="bi bi-quote quote-icon-left" />
-                        <span>{t(x.quoteKey)}</span>
-                        <i className="bi bi-quote quote-icon-right" />
+                    <div className="testimonial-text">
+                      <p className="testimonial-quote">
+                        <i className="bi bi-quote quote-icon-left" aria-hidden="true" />
+                        {t(x.quoteKey)}
+                        <i className="bi bi-quote quote-icon-right" aria-hidden="true" />
                       </p>
-                      <h3><b>{t(x.nameKey)}</b></h3>
-                      <h4>{t(x.roleKey)}</h4>
+                      <h3 className="testimonial-name">{t(x.nameKey)}</h3>
+                      <h4 className="testimonial-role">{t(x.roleKey)}</h4>
                     </div>
                   </div>
                 </div>

@@ -11,8 +11,8 @@ export default function ChefsPage() {
   return (
     <>
       <PageTitle 
-        title={t("chefs.title")} 
-        description={t("chefs.kicker")}
+        title={t("About our Chefs")} 
+        description={t("Know our chefs")}
         breadcrumbLabel={t("nav.chefs")} 
       />
       <Chefs />

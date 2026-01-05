@@ -12,7 +12,7 @@ export default function Chefs() {
 
   return (
     <section id="chefs" className="chefs section">
-      <SectionTitle kicker={t("chefs.kicker")} title={t("chefs.title")} />
+      <SectionTitle kicker={t("Top Quality chefs to your needs")} title={t("Our Chefs")} />
 
       <div className="container">
         <div className="row gy-4">
