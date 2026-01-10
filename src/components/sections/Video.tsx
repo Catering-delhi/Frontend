@@ -24,45 +24,14 @@ export default function Video() {
 
   return (
     <section id="video" className="video section">
-      {/* Original Video Player */}
-      <div style={{ maxWidth: '60%', margin: '0 auto 60px auto', position: 'relative' }}>
-        {!playing ? (
-          <>
-            <img
-              src="/assets/img/hero-bg.jpg"
-              alt="Video thumbnail"
-              style={{ width: '100%', height: 'auto', display: 'block' }}
-            />
-            <div
-              style={{
-                position: 'absolute',
-                top: '50%',
-                left: '50%',
-                transform: 'translate(-50%, -50%)',
-                cursor: 'pointer'
-              }}
-              onClick={() => setPlaying(true)}
-            >
-              <div className="pulsating-play-btn" />
-            </div>
-          </>
-        ) : (
-          <video
-            width="100%"
-            height="450"
-            src="/assets/video/videos.mp4"
-            controls
-            autoPlay
-            style={{ display: 'block' }}
-          />
-        )}
-      </div>
+      
+      
 
       {/* Additional Video Players */}
       <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 20px' }}>
         <SectionTitle 
           kicker={t("Customer Feedback")} 
-          title={t("Watch what our customers have to say")} 
+          title={t("Watch what our Clients say's")} 
         />
         <div style={{ 
           display: 'grid', 
