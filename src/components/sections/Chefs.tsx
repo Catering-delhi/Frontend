@@ -1,47 +1,28 @@
 // src/components/sections/Chefs.tsx
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import SectionTitle from "@/components/ui/SectionTitle";
 import { chefs } from "@/data/chefs";
 
-declare global {
-  interface Window {
-    bootstrap: any;
-  }
-}
-
 export default function Chefs() {
   const { t } = useTranslation("common");
+  const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
-    let carouselInstance: any;
+    const interval = setInterval(() => {
+      setActiveIndex((prevIndex) => (prevIndex + 1) % chefs.length);
+    }, 2000);
 
-    import("bootstrap/dist/js/bootstrap.bundle.min.js").then(() => {
-      const carouselElement = document.getElementById("chefsCarousel");
-
-      if (carouselElement && window.bootstrap) {
-        carouselInstance = new window.bootstrap.Carousel(carouselElement, {
-          interval: 2000,
-          ride: "carousel",
-          pause: "hover",
-        });
-      }
-    });
-
-    return () => {
-      if (carouselInstance) {
-        carouselInstance.dispose();
-      }
-    };
+    return () => clearInterval(interval);
   }, []);
 
   return (
     <section id="chefs" className="chefs section">
       <SectionTitle
         kicker={t("Top Quality chefs to your needs")}
-        title={t("Our Chefs")}
+        title={t("Our Chef's")}
       />
 
       <div className="container">
@@ -54,10 +35,9 @@ export default function Chefs() {
               <button
                 key={idx}
                 type="button"
-                data-bs-target="#chefsCarousel"
-                data-bs-slide-to={idx}
-                className={idx === 0 ? "active" : ""}
-                aria-current={idx === 0 ? "true" : undefined}
+                onClick={() => setActiveIndex(idx)}
+                className={idx === activeIndex ? "active" : ""}
+                aria-current={idx === activeIndex ? "true" : undefined}
                 aria-label={`Slide ${idx + 1}`}
               />
             ))}
@@ -66,22 +46,18 @@ export default function Chefs() {
             {chefs.map((chef, idx) => (
               <div
                 key={chef.id}
-                className={`carousel-item ${idx === 0 ? "active" : ""}`}
+                className={`carousel-item ${idx === activeIndex ? "active" : ""}`}
               >
                 <img
                   src={chef.image}
                   className="d-block w-100"
                   alt={t(chef.nameKey)}
                   style={{
-                    maxHeight: "450px",
+                    aspectRatio: "16/6",
                     objectFit: "cover",
                   }}
                 />
 
-                <div className="carousel-caption d-none d-md-block">
-                  <h5>{t(chef.nameKey)}</h5>
-                  <p>{t(chef.roleKey)}</p>
-                </div>
               </div>
             ))}
           </div>
@@ -90,8 +66,7 @@ export default function Chefs() {
           <button
             className="carousel-control-prev"
             type="button"
-            data-bs-target="#chefsCarousel"
-            data-bs-slide="prev"
+            onClick={() => setActiveIndex((prevIndex) => (prevIndex - 1 + chefs.length) % chefs.length)}
           >
             <span className="carousel-control-prev-icon" />
           </button>
@@ -99,8 +74,7 @@ export default function Chefs() {
           <button
             className="carousel-control-next"
             type="button"
-            data-bs-target="#chefsCarousel"
-            data-bs-slide="next"
+            onClick={() => setActiveIndex((prevIndex) => (prevIndex + 1) % chefs.length)}
           >
             <span className="carousel-control-next-icon" />
           </button>

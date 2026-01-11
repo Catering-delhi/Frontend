@@ -18,7 +18,7 @@ export default function Testimonials() {
   return (
     <section id="testimonials" className="testimonials-section">
       <div className="container">
-        <SectionTitle kicker={t("What our customers say about us")} title={t("Testimonials")} />
+        <SectionTitle kicker={t("What our Client's say about us")} title={t("Testimonials")} />
 
         <Reveal>
           <Swiper
@@ -45,20 +45,15 @@ export default function Testimonials() {
               <SwiperSlide key={x.id}>
                 <div className="testimonial-card">
                   <div className="testimonial-content">
-                    <img
-                      src={x.image}
-                      alt={`${t(x.nameKey)}, ${t(x.roleKey)}`}
-                      className="testimonial-avatar"
-                    />
                     <div className="testimonial-text">
-                      <p className="testimonial-quote">
-                        <i className="bi bi-quote quote-icon-left" aria-hidden="true" />
-                        {t(x.quoteKey)}
-                        <i className="bi bi-quote quote-icon-right" aria-hidden="true" />
-                      </p>
-                      <h3 className="testimonial-name">{t(x.nameKey)}</h3>
-                      <h4 className="testimonial-role">{t(x.roleKey)}</h4>
-                    </div>
+                    <p className="testimonial-quote">
+                      <i className="bi bi-quote quote-icon-left" aria-hidden="true" />
+                      {t(x.quoteKey)}
+                      <i className="bi bi-quote quote-icon-right" aria-hidden="true" />
+                    </p>
+                    <h3 className="testimonial-name">{t(x.nameKey)}</h3>
+                    <h4 className="testimonial-role">{t(x.roleKey)}</h4>
+                  </div>
                   </div>
                 </div>
               </SwiperSlide>

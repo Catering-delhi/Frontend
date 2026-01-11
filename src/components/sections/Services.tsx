@@ -60,8 +60,8 @@ export default function Services() {
               <div className="section_title mb-60 text-center">
                 <Reveal>
                   <h3>Our Services</h3>
-                  <p>
-                    <span style={{ color: "#cda45e" }}>BESPOKE CUISINE </span>
+                  <p style={{fontFamily:"Georgia, serif"}}>
+                    <span style={{ color: "#cda45e" }}>Bespoke Cuisine </span>
                     delivers premium catering for birthdays, weddings, private
                     parties, and corporate events.
                     <br className="d-none d-md-block" />
@@ -87,6 +87,8 @@ export default function Services() {
                       flexDirection: "column",
                       justifyContent: "flex-start",
                       transition: "transform 200ms ease, box-shadow 200ms ease",
+                      fontFamily:"Georgia, serif",
+                      fontSize:"1.1rem"
                     }}
                     onMouseEnter={(e) => {
                       e.currentTarget.style.transform = "translateY(-4px)";
@@ -101,7 +103,7 @@ export default function Services() {
                     <div className="service_icon mb-3">
                       <i
                         className={service.icon}
-                        style={{ fontSize: "3rem", color: "#cda45e" }}
+                        style={{ fontSize: "3.2rem", color: "#cda45e" }}
                       />
                     </div>
 
@@ -116,115 +118,107 @@ export default function Services() {
         </div>
       </section>
       <section
-  id="about"
-  className="about section"
-  style={{
-    background:
-      "linear-gradient(135deg, rgba(205,164,94,0.08), rgba(0,0,0,0.05))",
-    border: "1px solid rgba(205, 164, 94, 0.35)",
-    borderRadius: "18px",
-    padding: "60px 0",
-    boxShadow: "0 15px 40px rgba(0,0,0,0.08)",
-  }}
->
-  <div className="container" data-aos="fade-up" data-aos-delay="100">
-    <div
-      className="row gy-4 align-items-center"
-      style={{
-        background: "rgba(15, 13, 13, 0.65)",
-        backdropFilter: "blur(12px)",
-        borderRadius: "16px",
-        padding: "30px",
-      }}
-    >
-      {/* Image */}
-      <div className="col-lg-6 order-2 order-lg-1 content">
-        <Reveal>
-          <img
-            src="/assets/img/aboutus1.webp"
-            className="img-fluid about-img"
-            alt="Restaurant dining room"
-            style={{
-              maxWidth: "470px",
-              width: "100%",
-              height: "400px",
-              objectFit: "cover",
-              borderRadius: "14px",
-              boxShadow: "0 12px 35px rgba(205,164,94,0.25)",
-              transition: "transform 0.4s ease",
-            }}
-            onMouseOver={(e) =>
-              (e.currentTarget.style.transform = "scale(1.03)")
-            }
-            onMouseOut={(e) =>
-              (e.currentTarget.style.transform = "scale(1)")
-            }
-            onError={(e) => {
-              const target = e.target as HTMLImageElement;
-              if (target.src !== "/assets/img/about.jpg") {
-                target.src = "/assets/img/about.jpg";
-              }
-            }}
-          />
-        </Reveal>
-      </div>
-{/* col-lg-6 order-1 order-lg-2 text-center */}
-      {/* Content */}
-      <div
-        className="col-lg-6 order-1 order-lg-2 text-center"
-        style={{ padding: "20px 30px" }}
+        id="about"
+        className="about section"
+        style={{
+          background:
+            "linear-gradient(135deg, rgba(205,164,94,0.08), rgba(0,0,0,0.05))",
+          border: "1px solid rgba(205, 164, 94, 0.35)",
+          borderRadius: "18px",
+          padding: "60px 0",
+          boxShadow: "0 15px 40px rgba(0,0,0,0.08)",
+        }}
       >
-        <Reveal>
-          <h2
+        <div className="container" data-aos="fade-up" data-aos-delay="100">
+          <div
+            className="row gy-4 align-items-center"
             style={{
-              color: "#cda45e",
-              fontFamily: "Georgia, serif",
-              fontWeight: 700,
-              letterSpacing: "1px",
-              marginBottom: "20px",
-              position: "relative",
+              background: "rgba(15, 13, 13, 0.65)",
+              backdropFilter: "blur(12px)",
+              borderRadius: "16px",
+              padding: "30px",
             }}
           >
-            Signature Bites, Unforgettable Nights
-            <span
-              style={{
-                position: "absolute",
-                left: 0,
-                bottom: "-8px",
-                width: "80px",
-                height: "3px",
-                backgroundColor: "rgba(205,164,94,0.8)",
-                borderRadius: "5px",
-              }}
-            />
-          </h2>
+            {/* Image */}
+            <div className="col-lg-6 order-2 order-lg-1 content">
+              <Reveal>
+                <img
+                  src="/assets/img/homeab.jpg"
+                  className="img-fluid about-img"
+                  alt="Restaurant dining room"
+                  style={{
+                    maxWidth: "470px",
+                    width: "100%",
+                    height: "400px",
+                    objectFit: "cover",
+                    borderRadius: "14px",
+                    boxShadow: "0 12px 35px rgba(205,164,94,0.25)",
+                    transition: "transform 0.4s ease",
+                  }}
+                  onMouseOver={(e) =>
+                    (e.currentTarget.style.transform = "scale(1.03)")
+                  }
+                  onMouseOut={(e) =>
+                    (e.currentTarget.style.transform = "scale(1)")
+                  }
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    if (target.src !== "/assets/img/about.jpg") {
+                      target.src = "/assets/img/about.jpg";
+                    }
+                  }}
+                />
+              </Reveal>
+            </div>
 
-          <p
-            style={{
-              fontSize: "1.15rem",
-              lineHeight: "1.9",
-              color: "#f4efefff",
-              marginTop: "25px",
-            }}
-          >
-            Bespoke Cuisine is a premium culinary brand focused on creating
-            personalized and authentic dining experiences. We believe every
-            dish should reflect quality, creativity, and the unique preferences
-            of our clients. Our menus are thoughtfully curated, combining
-            India’s rich regional flavors with select international cuisines,
-            all prepared using premium ingredients and authentic techniques.
-            With a strong emphasis on vegetarian cuisine, hygiene, and
-            presentation, our professional chefs deliver consistency and
-            excellence in every plate. From corporate catering to private
-            events and custom menu planning, Bespoke Cuisine is dedicated to
-            serving food that is crafted with passion and precision.
-          </p>
-        </Reveal>
-      </div>
-    </div>
-  </div>
-</section>
+            {/* Content */}
+            <div
+              className="col-lg-6 order-1 order-lg-2 text-center"
+              style={{ padding: "20px 30px" }}
+            >
+              <Reveal>
+                <h2
+                  style={{
+                    color: "#cda45e",
+                    fontFamily: "Georgia, serif",
+                    fontWeight: 700,
+                    letterSpacing: "1px",
+                    marginBottom: "20px",
+                    position: "relative",
+                    borderBottom: "5px solid rgba(230, 167, 58, 0.35)"
+                  }}
+                >
+                  Signature Bites, Unforgettable Nights
+                </h2>
 
+                <p
+                  style={{
+                    fontSize: "1.15rem",
+                    lineHeight: "1.9",
+                    color: "#f4efefff",
+                    marginTop: "25px",
+                    fontFamily: "italic",
+                    textAlign:"left"
+                  }}
+                >
+                 <span style={{color:"#cda45e"}}> Bespoke Cuisine</span> is a premium culinary brand focused on
+                  creating personalized and authentic dining experiences. We
+                  believe every dish should reflect quality, creativity, and the
+                  unique preferences of our clients. Our menus are thoughtfully
+                  curated, combining India’s rich regional flavors with select
+                  international cuisines, all prepared using premium ingredients
+                  and authentic techniques. With a strong emphasis on vegetarian
+                  cuisine, hygiene, and presentation, our professional chefs
+                  deliver consistency and excellence in every plate. From
+                  corporate catering to private events and custom menu planning,
+                  Bespoke Cuisine is dedicated to serving food that is crafted
+                  with passion and precision.
+                </p>
+              </Reveal>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
