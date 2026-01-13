@@ -4,6 +4,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "./globals.css";
 
+import { efcoBrookshire } from "../fonts";
+
 import AppProviders from "@/components/providers/AppProviders";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -22,12 +24,12 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" data-bs-theme="dark" suppressHydrationWarning>
+    <html lang="en" data-bs-theme="dark" suppressHydrationWarning className={efcoBrookshire.variable}>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Dead+Saloon&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Dead+Saloon&family=Rye&display=swap"
           rel="stylesheet"
         />
 

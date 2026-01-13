@@ -949,22 +949,36 @@ section,
 .hero .container {
   position: relative;
   z-index: 3;
+  padding-left: 0 !important;
+  max-width: 100% !important;
+  margin-left: 0 !important;
+}
+
+.hero .row {
+  margin-left: 0 !important;
+}
+
+.hero .col-lg-8 {
+  padding-left: 15px !important;
 }
 
 .hero h2 {
   margin: 0;
   font-size: 48px;
   font-weight: 700;
+  font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 .hero h2 span {
   color: var(--accent-color);
+  font-family: var(--font-efco-brookshire) !important;
 }
 
 .hero p {
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   margin: 10px 0 0 0;
-  font-size: 24px;
+  font-size: 28px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .hero .cta-btn {
@@ -979,6 +993,7 @@ section,
   border-radius: 50px;
   transition: 0.3s;
   flex-shrink: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .hero .cta-btn:first-child {

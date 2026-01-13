@@ -20,7 +20,7 @@ export default function Hero() {
           <div className="col-lg-8 d-flex flex-column align-items-start">
             <Reveal delay={0.05}>
               <h2>
-                {t("hero.welcome")} <span>{t("site.name")}</span>
+                {t("hero.welcome")}<br/><span>{t("site.name")}</span>
               </h2>
             </Reveal>
 

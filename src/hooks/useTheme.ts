@@ -25,14 +25,14 @@ export function initTheme() {
 }
 
 export function useTheme() {
-  const [theme, setTheme] = useState<ThemeMode>("dark");
+  const [theme, setTheme] = useState<ThemeMode>(() => {
+    const saved = safeGet(THEME_KEY) as ThemeMode | null;
+    return saved ?? (prefersDark() ? "dark" : "light");
+  });
 
   useEffect(() => {
-    const saved = safeGet(THEME_KEY) as ThemeMode | null;
-    const mode: ThemeMode = saved ?? (prefersDark() ? "dark" : "light");
-    setTheme(mode);
-    applyTheme(mode);
-  }, []);
+    applyTheme(theme);
+  }, [theme]);
 
   const toggle = useMemo(
     () => () => {

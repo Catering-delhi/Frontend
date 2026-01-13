@@ -16,14 +16,14 @@ export function initLocale(i18n: I18nType) {
 }
 
 export function useLocale(i18n: I18nType) {
-  const [locale, setLocaleState] = useState<Locale>("en");
+  const [locale, setLocaleState] = useState<Locale>(() => {
+    const saved = safeGet(LOCALE_KEY) as Locale | null;
+    return saved ?? "en";
+  });
 
   useEffect(() => {
-    const saved = safeGet(LOCALE_KEY) as Locale | null;
-    const initial: Locale = saved ?? "en";
-    setLocaleState(initial);
-    if (i18n.language !== initial) i18n.changeLanguage(initial);
-  }, [i18n]);
+    if (i18n.language !== locale) i18n.changeLanguage(locale);
+  }, [i18n, locale]);
 
   const setLocale = useMemo(
     () => (next: Locale) => {

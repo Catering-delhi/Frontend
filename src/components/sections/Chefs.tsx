@@ -45,7 +45,7 @@ export default function Chefs() {
           <div className="carousel-inner">
             {chefs.map((chef, idx) => (
               <div
-                key={chef.id}
+                key={idx}
                 className={`carousel-item ${idx === activeIndex ? "active" : ""}`}
               >
                 <img
