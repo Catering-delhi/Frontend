@@ -134,7 +134,7 @@ export default function About() {
                   <div className="mb-4">
                     <img
                       className="img-fluid"
-                      src="https://res.cloudinary.com/dwsiqzqzy/image/upload/v1769841420/owner_ejpe4v.jpg"
+                      src="https://res.cloudinary.com/dwsiqzqzy/image/upload/v1772727305/Founder_vcla5a.png"
                       alt="Team member"
                     />
                   </div>
@@ -146,7 +146,7 @@ export default function About() {
                       fontFamily: "var(--font-lora-bold)",
                     }}
                   >
-                    Mr. Sanjeet Singh
+                    Mr. Anuj Singh
                   </h5>
                   <div
                     className="fw-bold"
@@ -171,7 +171,7 @@ export default function About() {
                   <div className="mb-4">
                     <img
                       className="img-fluid"
-                      src="https://res.cloudinary.com/dwsiqzqzy/image/upload/v1769841416/Co-founder_qvaosf.jpg"
+                      src="https://res.cloudinary.com/dwsiqzqzy/image/upload/v1772727203/Co_yapmz2.jpg"
                       alt="Team member"
                     />
                   </div>
@@ -183,7 +183,7 @@ export default function About() {
                       fontFamily: "var(--font-lora-bold)",
                     }}
                   >
-                    Mr. Anuj Singh
+                    Mr. Priyanshu Singh
                   </h5>
                   <div
                     className="fw-bold"
